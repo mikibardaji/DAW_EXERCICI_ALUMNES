@@ -9,7 +9,6 @@ public class DescuentoTipoUno {
         double descuento = sc.nextDouble();
         
         double precioConDescuento = precioOriginal - (precioOriginal * (descuento / 100));
-
        
         System.out.println("El precio original es: " + precioOriginal);
         System.out.println("El descuento es: " + descuento + "%");
@@ -19,4 +18,5 @@ public class DescuentoTipoUno {
     }
 
 }
+
 
