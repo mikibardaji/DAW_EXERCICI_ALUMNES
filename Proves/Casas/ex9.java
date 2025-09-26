@@ -17,19 +17,16 @@ public class ex9 {
 
         if(segundo<60){
             segundo++;
-            System.out.println(hora + ":" + minuto + ":" + segundo);
         }
 
         if(segundo>=60){
             segundo = 00;
             minuto++;
-            System.out.println(hora + ":" + minuto + ":" + segundo);
         }
 
         if(minuto>=60){
             minuto = 00;
             hora++;
-            System.out.println(hora + ":" + minuto + ":" + segundo);
         }
 
         if(hora>=24){
@@ -37,7 +34,8 @@ public class ex9 {
             minuto = 00;
             segundo = 00;
 
-            System.out.println(hora + ":" + minuto + ":" + segundo);
         }
+        System.out.println(hora + ":" + minuto + ":" + segundo);
     }
 }
+
