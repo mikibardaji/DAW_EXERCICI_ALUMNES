@@ -14,6 +14,6 @@ char letra = sc.nextLine().charAt(0);
 ```
   if (letra == 'c')
   {
-
-}
+    //TO DO codigo dentro de IF
+  }
 ```
