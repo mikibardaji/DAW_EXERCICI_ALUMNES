@@ -16,9 +16,9 @@ public class Actividad9 {
 
      System.out.println( "Pedir hora ");
     hora = sc.nextInt();
-    System.out.println( "Pedir minuto  ");
+    System.out.println( "Pedir minuto ");
     minuto = sc.nextInt();
-    System.out.println( "Pedir segundo  ");
+    System.out.println( "Pedir segundo ");
     segundo= sc.nextInt();
     segundo=segundo+1;
     if (segundo>=60)
@@ -55,3 +55,4 @@ public class Actividad9 {
 
      }  
 }
+
