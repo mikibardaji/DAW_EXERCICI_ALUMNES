@@ -15,11 +15,11 @@ public class Actividad3 {
     valor2 = sc.nextDouble();
     if (valor1>valor2)
     {
-        System.out.println("El numero 1 es mayor: " + valor1);
+        System.out.println("El numero mas grande es " + valor1);
     }
     else if (valor2>valor1)
     {
-        System.out.println("El numero 2 es mayor: " + valor2);
+        System.out.println("El numero mas grande es " + valor2);
     }
     else if(valor1==valor2)
     {
@@ -27,6 +27,7 @@ public class Actividad3 {
     }
 }
 }
+
 
 
 
