@@ -19,7 +19,7 @@ public class Actividad3 {
     }
     else if (valor2>valor1)
     {
-        System.out.println("El numero2 2 es mayor: " + valor2);
+        System.out.println("El numero2 es mayor: " + valor2);
     }
     else if(valor1==valor2)
     {
@@ -27,4 +27,5 @@ public class Actividad3 {
     }
 }
 }
+
 
