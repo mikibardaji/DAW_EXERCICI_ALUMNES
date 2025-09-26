@@ -12,7 +12,10 @@ public class descompte {
 
         double preufinal = preutotal - (preutotal * descompte/100);
         System.out.println("El cost final del producte és: " + preufinal);
+        sc.close();
 
 
     }
 }
+
+
