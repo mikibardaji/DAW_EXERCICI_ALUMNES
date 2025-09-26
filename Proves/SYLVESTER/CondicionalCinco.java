@@ -18,8 +18,12 @@ public class CondicionalCinco {
         if (NumUno > NumDos) {
             System.out.println("the number in order is " + NumDos + "," + NumUno);
 
-        } else {
+        } else if (NumDos > NumUno) {
             System.out.println("the number in order is " + NumUno + "," + NumDos);
+        }
+
+        else {
+            System.out.println("both numbers are the same");
         }
 
         sc.close();
