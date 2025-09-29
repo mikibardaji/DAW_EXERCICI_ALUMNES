@@ -11,22 +11,22 @@ import java.util.Scanner;
 public class ejercicio11 {
     public static void main(String[] args) throws Exception {
          Scanner sc = new Scanner(System.in); 
-         double precio , cantidad; 
+         double precio , dinero; 
           System.out.println("Introduce el precio del producto  ");
          precio = sc.nextDouble();
 
          System.out.println("Introduce el dinero que tienes  ");
-         cantidad = sc.nextDouble();
+         dinero = sc.nextDouble();
          
-      if (cantidad > precio ){
+      if (dinero > precio ){
 
-            double canvio = precio - cantidad ;
+            double canvio = precio - dinero ;
             System.out.println(" Sobran " + canvio );
 
         }
-        else if (cantidad < precio ){
+        else if (dinero < precio ){
 
-            double faltadinero = precio - cantidad;
+            double faltadinero = precio - dinero;
             System.out.println(" Faltan  "  + faltadinero);
         }
         else {
@@ -38,4 +38,5 @@ public class ejercicio11 {
     }
 }
     
+
 
