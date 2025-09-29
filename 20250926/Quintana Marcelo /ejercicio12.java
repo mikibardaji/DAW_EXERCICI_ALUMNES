@@ -15,19 +15,19 @@ import java.util.Scanner;
 public class ejercicio12 {
     public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
-    char semaforo;
+    char colorsemaforo;
     System.out.println("Introduce el color del semaforo (R-Rojo, N-Naranja, V-verde): ");
-    semaforo= sc.next().charAt(0);
+    colorsemaforo= sc.next().charAt(0);
 
-    if (semaforo == 'V') {
+    if (colorsemaforo == 'V') {
 
             System.out.println("Puedes pasar");
 
-        } else if (semaforo == 'N') {
+        } else if (colorsemaforo == 'N') {
 
             System.out.println("Debes esperar");
 
-        } else if (semaforo == 'R') {
+        } else if (colorsemaforo == 'R') {
 
             System.out.println("Detente");
         } else {
@@ -41,4 +41,4 @@ public class ejercicio12 {
 
 }
 }
-    
+  
