@@ -12,15 +12,19 @@ public class FiguereoDanielEx12 {
       
 
         //Establecer condiciones
-        if (valorSemaforo == 'V') {
+        if (valorSemaforo == 'V'|| valorSemaforo == 'v') 
+        {
             System.out.println("Puedes Cruzar");
-        } else if (valorSemaforo == 'A') {
+        } else if (valorSemaforo == 'A' || valorSemaforo == 'a') 
+        {
             System.out.println("Cruza con mucha precaucion, si no has comenzado a cruzar, espera a que se ponga verde");
-        } else if (valorSemaforo == 'R') {
+        } else if (valorSemaforo == 'R'|| valorSemaforo == 'r') 
+        {
             System.out.println("No cruces, espera a que se ponga verde");
         } else {
             System.out.println("Valor incorrecto, introduce V, A o R");
         }
+
 
     }
 
