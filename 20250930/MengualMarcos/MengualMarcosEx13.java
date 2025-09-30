@@ -39,9 +39,11 @@ public class MengualMarcosEx13 {
                 System.out.println("Tu cambio a dirhams es de " + euros);
                 break;
                 default:
+                System.out.println(" Oprcion incorrecta ");
         }
 
 
     }
 }
+
 
