@@ -23,19 +23,19 @@ public class Condicionales13 {
             case 'd':
             case 'D':
                 double changeDolar = euro * 1.17;
-                System.out.println(changeDolar);
+                System.out.println(euro+ "euros is " +changeDolar + "dollars ");
                 break;
 
             case 'y':
             case 'Y':
-                double changeYen = euro * 173;
-                System.out.println(changeYen);
+                double changeYen = euro * 173.89;
+                System.out.println(euro+ "euros is " +changeYen + " yen ");
                 break;
 
             case 'h':
             case 'H':
                 double changeDirham = euro * 10.64;
-                System.out.println(changeDirham);
+                System.out.println(euro+ "euros is " +changeDirham + " dirham ");
                 break;
 
             default:
