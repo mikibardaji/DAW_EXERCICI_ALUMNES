@@ -18,7 +18,7 @@ public class MengualMarcosEx13 {
         char moneda = 0;
         System.out.println(" Cuantos euros vas a importar ");
         euros = src.nextDouble();
-        System.out.println(" A que moneda deseas cambiarlo? (1-Dolares 2-Yenes 3-Dirhams) ");
+        System.out.println(" A que moneda deseas cambiarlo? (1 o D =Dolares 2 o Y =Yenes 3 o H =Dirhams) ");
         moneda = src.next().charAt(moneda);
 
         switch (moneda) 
@@ -44,3 +44,4 @@ public class MengualMarcosEx13 {
 
     }
 }
+
