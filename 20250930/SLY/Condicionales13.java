@@ -28,9 +28,18 @@ public class Condicionales13 {
 
             case 'y':
             case 'Y':
-                double changeYen = euro * 1.17;
-                System.out.println(changeDolar);
+                double changeYen = euro * 173;
+                System.out.println(changeYen);
                 break;
+
+            case 'h':
+            case 'H':
+                double changeDirham = euro * 10.64;
+                System.out.println(changeDirham);
+                break;
+
+            default:
+                System.out.println("incorrect opcion");
         }
 
         sc.close();
@@ -38,3 +47,4 @@ public class Condicionales13 {
     }
 
 }
+
