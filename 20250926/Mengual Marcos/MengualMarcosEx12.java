@@ -17,15 +17,15 @@ public class MengualMarcosEx12 {
     System.out.println("Introduce el color del semaforo (R-Rojo, N-Naranja, V-verde): ");
     colorsemaforo= sc.next().charAt(0);
 
-    if (colorsemaforo == 'V') {
+    if (colorsemaforo == 'V' || colorsemaforo == 'v') {
 
             System.out.println("Puedes pasar");
 
-        } else if (colorsemaforo == 'N') {
+        } else if (colorsemaforo == 'N' || colorsemaforo == 'n') {
 
             System.out.println("Debes esperar");
 
-        } else if (colorsemaforo == 'R') {
+        } else if (colorsemaforo == 'R' || colorsemaforo == 'r') {
 
             System.out.println("Detente");
         } else {
@@ -36,4 +36,5 @@ public class MengualMarcosEx12 {
 
 }
 }
+
 
