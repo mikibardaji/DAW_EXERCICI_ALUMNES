@@ -19,7 +19,7 @@ public class ejercicio12 {
     System.out.println("Introduce el color del semaforo (R-Rojo, N-Naranja, V-verde): ");
     colorsemaforo= sc.next().charAt(0);
 
-    if (colorsemaforo == 'V') {
+    if (colorsemaforo == 'V' || colorsemaforo =='v') {
 
             System.out.println("Puedes pasar");
 
@@ -35,10 +35,6 @@ public class ejercicio12 {
             System.out.println("Valor incorrecto, introduce V, N o R");
         }
 
-
-
-
-
 }
 }
-  
+
