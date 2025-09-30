@@ -11,7 +11,6 @@ public class FiguereoDanielEx12 {
         valorSemaforo = sc.next().charAt(0);
       
 
-       // ...existing code...
         //Establecer condiciones
         if (valorSemaforo == 'V') {
             System.out.println("Puedes Cruzar");
@@ -22,7 +21,6 @@ public class FiguereoDanielEx12 {
         } else {
             System.out.println("Valor incorrecto, introduce V, A o R");
         }
-// ...existing code...
 
     }
 
