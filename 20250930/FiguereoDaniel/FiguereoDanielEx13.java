@@ -31,7 +31,7 @@ final double valorDirham = 10.66;
         case 'd':
         case 'D':
             resultado = valorEuros * valorDolar;
-            System.out.println("El valor en dolares es:----23 " + resultado);    
+            System.out.println("El valor en dolares es: " + resultado);    
         break;
 
         case 'y':
@@ -53,3 +53,4 @@ final double valorDirham = 10.66;
    
 }
 }
+
