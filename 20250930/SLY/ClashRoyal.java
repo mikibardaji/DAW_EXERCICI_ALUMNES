@@ -23,3 +23,4 @@ int carta = sc.nextInt();
 
 
 }
+
