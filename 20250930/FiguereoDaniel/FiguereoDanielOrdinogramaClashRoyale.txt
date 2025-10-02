@@ -1,0 +1,8 @@
+﻿//Clash Royale
+        //Establecer variables
+        //Pedir cuantas copas tiene el jugador
+        //Si tienes menos de 2000 copas, elegir entre mago electrico o mega esbirro
+        //Si tiene igual o mas de 2000 copas elegir entre caballero o bandida
+        //Escoger con la primera letra del nombre
+        //tiene que aceptar mayusculas y minusculas
+        //Si tienes mas de 3000 copas elegir entre ejercito de esqueletos o gigante noble
