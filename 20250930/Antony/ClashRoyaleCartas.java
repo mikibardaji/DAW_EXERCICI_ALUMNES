@@ -19,7 +19,7 @@ public class ClashRoyaleCartas {
             System.out.print("Elige tu carta (m/e): ");
         } else if (copas >= 2000 && copas < 3000) {
             System.out.println("Opciones disponibles:");
-            System.out.println("c - Cavallero");
+            System.out.println("c - Caballero");
             System.out.println("b - Bandida");
             System.out.print("Elige tu carta (c/b): ");
         } else {
@@ -66,3 +66,4 @@ public class ClashRoyaleCartas {
         dato.close();
     }
 }
+
