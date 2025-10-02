@@ -1,0 +1,71 @@
+ 
+Realitza el ordinograma de cadascun dels passos, i després codifica amb Java. ( Si vols fer primer tot el ordinograma abans de codificar també és possible)
+1.	Una de les funcionalitats al  clash royale quan vas sumant copes, és que quant arribes a un cert número de copes, et deixa elegir entre dues cartes per afegir-les al teu mazo. 
+La versió 1 del programa , simularem l'elecció de dues cartes. Elegirem entre les cartes, del Mago Electrico i del esbirro mega. 
+El programa ha de preguntar quina carta vols Mago Electrico(0) o esbirro mega(1). Quant la triis , et sortirà la frase “Has escollit XXXX(nom de la carta escollida)”.
+
+Inicio
+Mostrar: “¿Qué carta quieres? Mago Eléctrico(0) o Esbirro Mega(1)”
+Leer opción
+Si la opción es 0  Mostrar: “Has escogido Mago Eléctrico”
+Si la opción es 1  Mostrar: “Has escogido Esbirro Mega”
+Si no es 0 ni 1  Mostrar: “Opción no válida”
+Fin
+
+
+2.	L’evolució del programa En aquest cas augmentarem les opcions amb més cartes en funció del número de copes que tens. Et preguntarà quantes copes tens aconseguides a l'inici de tot i després…
+○	Si tens menys de 2000, et deixarà triar entre les dues cartes del exercici 1
+○	Si igual o més de 2000 , hauras de triar entre dues cartes noves (Cavallero(0) i Bandida(1))
+  
+Inicio
+Mostrar: “¿Cuántas copas tienes?”
+Leer copas
+Si las copas son menores de 2000
+Mostrar: “Elige Mago Eléctrico(0) o Esbirro Mega(1)”
+Leer opción y mostrar la carta elegida
+Si las copas son 2000 o más
+Mostrar: “Elige Caballero(0) o Bandida(1)”
+Leer opción y mostrar la carta elegida
+Fin
+
+3.	Realitzarem el mateix programa però per elegir enlloc de ficar una opció numerica, tens que ficar la primera lletra del personatge amb minúscula (m, e).
+
+Inicio
+Mostrar: “¿Cuántas copas tienes?”
+Leer copas
+Si las copas son menores de 2000
+Mostrar: “Elige m (Mago Eléctrico) o e (Esbirro Mega)”
+Leer letra y mostrar la carta elegida
+Si las copas son 2000 o más
+Mostrar: “Elige c (Caballero) o b (Bandida)”
+Leer letra y mostrar la carta elegida
+Fin
+
+4.	El mateix que el programa anterior però si escrius la lletra amb majúscula o amb minúscula te la te que aceptar.
+Inicio
+
+Mostrar: “¿Cuántas copas tienes?”
+Leer copas
+Si las copas son menores de 2000
+Mostrar: “Elige m (Mago Eléctrico) o e (Esbirro Mega)”
+Leer letra (minúscula o mayúscula) y mostrar la carta elegida
+Si las copas son 2000 o más
+Mostrar: “Elige c (Caballero) o b (Bandida)”
+Leer letra (minúscula o mayúscula) y mostrar la carta elegida
+Fin
+
+
+5.	Augmentarem la dificultat, donant la opció que si tens més de 3000 copes, et deixa triar entre el Ejercito de esqueletos, o el Gigante, en lloc de les cartes anterior, si no superes les 3000 et seguirà preguntant per les opcions de l'exercici anterior
+  Inicio
+Mostrar: “¿Cuántas copas tienes?”
+Leer copas
+Si las copas son menores de 2000
+Mostrar: “Elige m (Mago Eléctrico) o e (Esbirro Mega)”
+Leer letra y mostrar la carta elegida
+Si las copas son 2000 o más y menores de 3000
+Mostrar: “Elige c (Caballero) o b (Bandida)”
+Leer letra y mostrar la carta elegida
+Si las copas son 3000 o más
+Mostrar: “Elige s (Ejército de esqueletos) o g (Gigante)”
+Leer letra y mostrar la carta elegida
+Fin
