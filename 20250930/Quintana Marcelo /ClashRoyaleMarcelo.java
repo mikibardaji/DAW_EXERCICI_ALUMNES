@@ -1,11 +1,10 @@
-//Pedir cuántas copas tiene el jugador
-//Si el jugador tiene menos de 2000 copas, que elija entre Mago eléctrico (m) o Esbirro mega (e)
-//Mostrar la carta elegida
-//Si el jugador tiene entre 2000 y 2999 copas, que elija entre Caballero (c) o Bandida (b)
-//Mostrar la carta elegida
-//Si el jugador tiene 3000 o más copas, que elija entre Ejército de esqueletos (e) o Gigante (g)
-//Mostrar la carta elegida
 
+//Si el jugador tiene menos de 2000 copas, que elija entre Mago eléctrico (m) o Esbirro mega (e)
+ //Mostrar la carta elegida
+//Si el usuario tiene menos de 3000 copas y mas o igual a 2000 copas deja elegir entre bandida y caballero
+ //Mostrar la carta elegida
+ //Si el usuario tiene mas o igual a 3000 copas dejar escoger entre gigante noble y ejercito de esqueletos
+//Mostrar la carta elegida
 import java.util.Scanner;
 
 public class ClashRoyaleMarcelo {
