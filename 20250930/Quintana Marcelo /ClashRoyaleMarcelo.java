@@ -1,4 +1,4 @@
-
+//Pedir cuántas copas tiene el jugador
 //Si el jugador tiene menos de 2000 copas, que elija entre Mago eléctrico (m) o Esbirro mega (e)
  //Mostrar la carta elegida
 //Si el usuario tiene menos de 3000 copas y mas o igual a 2000 copas deja elegir entre bandida y caballero
