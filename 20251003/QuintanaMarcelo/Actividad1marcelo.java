@@ -1,12 +1,15 @@
 
-// Que te diga si hace frío, templado o calor
-
 // 1. Declarar variable temperatura
 // 2. Pedir al usuario que introduzca la temperatura actual
-// 3. Si temperatura < 10 → mostrar "Hace bastante frío. ¡Abrígate bien!"
-// 4. Si temperatura == 20 → mostrar "La temperatura es perfecta, ni frío ni calor."
-// 5. Si temperatura < 25 → mostrar "El clima está templado. ¡Perfecto para salir!"
-// 6. Si no (else) → mostrar "Hace mucho calor. ¡No olvides hidratarte!"
+// 3. Evaluar la temperatura:
+//      Si temperatura < 10
+//          Mostrar "Hace bastante frío. ¡Abrígate bien!"
+//      Sino, si temperatura == 20
+//          Mostrar "La temperatura es perfecta, ni frío ni calor."
+//      Sino, si temperatura < 25
+//          Mostrar "El clima está templado. ¡Perfecto para salir!"
+//      Sino
+//          Mostrar "Hace mucho calor. ¡No olvides hidratarte!"
 
 import java.util.Scanner;
 
@@ -33,3 +36,4 @@ public class Actividad1marcelo {
     }
     }
 }
+
