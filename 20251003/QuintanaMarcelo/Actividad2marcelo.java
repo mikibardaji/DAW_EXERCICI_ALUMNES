@@ -6,12 +6,20 @@
 //      3. Ensalada
 //      4. Sushi
 // 3. Pedir al usuario que introduzca una opción (1-4)
-// 4. Evaluar la opción usando SWITCH:
-//      CASO 1 → Mostrar "Has elegido pizza. ¡Deliciosa elección!"
-//      CASO 2 → Mostrar "Has elegido hamburguesa. ¡Clásico y sabroso!"
-//      CASO 3 → Mostrar "Has elegido ensalada. ¡Muy saludable!"
-//      CASO 4 → Mostrar "Has elegido sushi. ¡Exquisito!"
-//      VALOR POR DEFECTO → Mostrar "Opción no válida. Debes elegir un número del 1 al 4."
+
+// 1. Declarar variable opcion
+// 2. Mostrar el menú de comidas:
+//      1. Pizza
+//      2. Hamburguesa
+//      3. Ensalada
+//      4. Sushi
+// 3. Pedir al usuario que introduzca una opción (1-4)
+// 4. Evaluar la opción introducida:
+//      Si opción = 1 → mostrar "Has elegido pizza"
+//      Si opción = 2 → mostrar "Has elegido hamburguesa"
+//      Si opción = 3 → mostrar "Has elegido ensalada"
+//      Si opción = 4 → mostrar "Has elegido sushi"
+//      Si otra opción → mostrar "Opción no válida"
 
 
 
