@@ -1,5 +1,5 @@
-// Programa que te pregunte la temperatura actual
-// y te diga si hace frío, templado o calor
+
+// Que te diga si hace frío, templado o calor
 
 // 1. Declarar variable temperatura
 // 2. Pedir al usuario que introduzca la temperatura actual
