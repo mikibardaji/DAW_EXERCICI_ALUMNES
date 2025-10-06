@@ -1,0 +1,46 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+// The main method must be in a class named "Main".
+class Main {
+    public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+        int entrada;
+        System.out.println("Cuantas entradas quieres comprar?");
+            System.out.println("1= Una entrada.");
+            System.out.println("2= Dos entradas, la segunda con 10% descuento.");
+            System.out.println("3= Tres o más entradas, con 5% descuento en todas.");
+        entrada =  sc.nextInt();
+
+double precio_original = 50;
+        double precio_iva;
+        if (entrada==1){
+            System.out.println("El precio de la entrada es de " + precio_original + " euros *SIN IVA*");
+                precio_iva = precio_original+(precio_original*21/100);      
+            System.out.println("Finalmente tendras que pagar " + precio_iva + "euros con IVA");;
+        }
+
+        else if (entrada==2){
+          double descuento2  = precio_original-(precio_original*10/100);
+                 System.out.println("El precio de la primera entrada te sale por " + precio_original + "euros.");
+                System.out.println("Y la segunda te sale por " + descuento2 + "euros, con el descuento 10% *SIN IVA*");
+            double suma2 = precio_original+descuento2;
+                System.out.println("Te sale un toal de " + suma2 + "euros *SIN IVA*");
+            precio_iva = suma2+(suma2*21/100);      
+            System.out.println("Finalmente tendras que pagar " + precio_iva + "euros con IVA");
+        }
+
+        else if (entrada>=3){
+                 double descuento3  = precio_original-(precio_original*5/100);
+            double suma3 = descuento3*entrada;
+            System.out.println("El precio de cada entrada te sale por " + descuento3 + "euros *SIN IVA*");
+            System.out.println("Has pedido " + entrada + " entradas y te salen por " + suma3 + "euros en total *SIN IVA*");
+            precio_iva = descuento3+(descuento3*21/100);
+            System.out.println("Finalmente tendras que pagar " + precio_iva*entrada + "euros con IVA");
+            
+          
+            
+        }
+    }
+}
