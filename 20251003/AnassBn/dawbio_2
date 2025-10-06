@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+public class DAWBIO1 {
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+//*Indico: //Preguntar al usuario el peso
+int peso;
+System.out.println("Cuanto pesas?");
+peso = sc.nextInt();
+
+//Menu de medicamento
+System.out.println("<MENU MEDICAMENTO>");
+System.out.println("I- Ibuprofeno");
+System.out.println("X- Xarelto");
+System.out.println("A- Amoxicilina");
+System.out.println("F- Fluoxetina");
+
+
+//preguntar tipo_medicamento
+char TIPO_MEDICAMENTO;
+System.out.println("Que tipo de medicamento quieres consultar?");
+TIPO_MEDICAMENTO = sc.next().charAt(0);
+
+        if  (TIPO_MEDICAMENTO=='I' || TIPO_MEDICAMENTO=='i')
+         {
+
+            if (peso<70) {
+                System.out.println("Con " + peso + "kg tienes que tomar 500mg.");
+            }
+            else if (peso>=70) {
+                System.out.println("Con " + peso + "kg tienes que tomar 1g.");
+            }
+        }
+
+
+            else if (TIPO_MEDICAMENTO=='X' || TIPO_MEDICAMENTO=='x') {
+                    if (peso<60) {
+                    System.out.println("Con " + peso + "kg tienes que tomar 10mg.");
+            }
+                    else if (peso>=60  && peso<80) {
+                    System.out.println("Con " + peso + "kg tienes que tomar 15mg.");
+            }
+                    else if (peso>=80) {
+                    System.out.println("Con " + peso + "kg tienes que tomar 20mg.");
+            }
+            }
+
+
+            else if (TIPO_MEDICAMENTO=='A' || TIPO_MEDICAMENTO=='a') {
+                        if (peso<65) {
+                        System.out.println("Con " + peso + "kg tienes que tomar 500mg.");
+            }
+                        else if (peso>=65) {
+                        System.out.println("Con " + peso + "kg tienes que tomar 1g.");
+            }
+                }
+
+            else if (TIPO_MEDICAMENTO=='F' || TIPO_MEDICAMENTO=='f') {
+                            if (peso<80) {
+                        System.out.println("Con " + peso + "kg tienes que tomar 20mg.");
+            }
+                        else if (peso>=80) {
+                        System.out.println("Con " + peso + "kg tienes que tomar 40g.");
+            }
+            
+                }
+            else
+            {
+                  System.out.println("ERROR, VUELVE A EJECUTAR"); 
+            }
+
+
+
+
+
+
+
+
+}
+}
