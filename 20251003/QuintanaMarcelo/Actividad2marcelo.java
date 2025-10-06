@@ -6,14 +6,6 @@
 //      3. Ensalada
 //      4. Sushi
 // 3. Pedir al usuario que introduzca una opción (1-4)
-
-// 1. Declarar variable opcion
-// 2. Mostrar el menú de comidas:
-//      1. Pizza
-//      2. Hamburguesa
-//      3. Ensalada
-//      4. Sushi
-// 3. Pedir al usuario que introduzca una opción (1-4)
 // 4. Evaluar la opción introducida:
 //      Si opción = 1 → mostrar "Has elegido pizza"
 //      Si opción = 2 → mostrar "Has elegido hamburguesa"
