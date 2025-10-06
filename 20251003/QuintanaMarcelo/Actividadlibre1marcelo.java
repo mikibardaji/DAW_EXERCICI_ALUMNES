@@ -13,7 +13,7 @@
 
 import java.util.Scanner;
 
-public class Actividad1marcelo {
+public class Actividadlibre1marcelo {
     public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
     int temperatura;
@@ -36,4 +36,5 @@ public class Actividad1marcelo {
     }
     }
 }
+
 
