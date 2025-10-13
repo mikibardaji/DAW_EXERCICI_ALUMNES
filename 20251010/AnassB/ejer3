@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class del1para200de1a1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+
+        int numero;
+        int contador = -2;
+
+        while (contador<=200) {
+            contador = contador +1 +1;
+            System.out.println(contador);
+        }
+        System.out.println("Estos son los numeros pares entre el 1 y el 200");
+
+    }
+
+}
+
+
