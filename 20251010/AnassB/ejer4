@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ejer4bucl {
+public static void main(String[] args) {
+ 
+    Scanner sc = new Scanner(System.in);
+    int contador = 0;
+    int veces;
+    System.out.println("Contare 1 a 1 hasta el numero que me digas");
+    veces = sc.nextInt();
+    System.out.println("Voy a contar hasta el numero " + veces);
+
+    while (contador<veces) {
+        contador = contador +1;
+        System.out.println(contador);
+    }
+
+}
+}
