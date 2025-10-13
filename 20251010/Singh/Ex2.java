@@ -16,3 +16,4 @@ public class Ex2 {
         sc.close();
     }
 }
+
