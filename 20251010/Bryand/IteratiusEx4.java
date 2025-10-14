@@ -2,12 +2,19 @@ import java.util.Scanner;
 
     public class IteratiusEx4 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
-            System.out.print("Introduce un número N: ");
-           int N = sc.nextInt();
+
+        System.out.print("Introduce un número N: ");
+
+        int n = sc.nextInt();
+        int contador = 1;
         
-           for (int i = 1; i <= N; i++) {
-                 System.out.println(i);
-              }
-}
+        while (contador <= n) {
+            System.out.println(contador);
+            contador++; 
+        }
+
+    }
+
 }
