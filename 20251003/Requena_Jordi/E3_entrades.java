@@ -29,4 +29,5 @@ public class E3_entrades {
         System.out.println("Preu total amb IVA (21%): "+ preuFinal + " euros");
 
     }
+
 }
