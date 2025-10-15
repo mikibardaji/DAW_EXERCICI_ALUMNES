@@ -1,0 +1,32 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class ejerAleat {
+public static void main(String[] args) {
+ 
+    Scanner sc = new Scanner(System.in);
+    Random rd = new Random();
+
+    int aleatorio = rd.nextInt(1,100);
+
+    int intentos = 0;
+    int numero_usuario = 0;
+
+    while (aleatorio!=numero_usuario) {
+        ++intentos;
+        System.out.println("Introduce un numero entre 1 y 100");
+        numero_usuario = sc.nextInt();
+
+        if (aleatorio>numero_usuario) {
+            System.out.println("Mas alto");
+        }
+        else if (aleatorio<numero_usuario) {
+            System.out.println("Mas bajo");
+        }    
+    }
+
+System.out.println("HAS ACERTADO. Lo has adivinado en -> " + intentos + " intentos");
+
+
+}
+}
