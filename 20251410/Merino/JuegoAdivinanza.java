@@ -6,7 +6,7 @@ public class JuegoAdivinanza {
        
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
-        int ordenador_piensa = rd.nextInt(1,100);
+        int ordenador_piensa = rd.nextInt(1,101);
         int numero;
         System.out.print("¿Qué número crees que he pensado?"); 
         
@@ -14,13 +14,13 @@ public class JuegoAdivinanza {
       do {
         numero = sc.nextInt();
         if (numero < ordenador_piensa) {
-            System.out.println("El número que me has dicho es más pequeño, dime uno más grande.");
+            System.out.println("El número que me has dicho es más pequeño, dime uno más GRANDE.");
         }
         else if (numero > ordenador_piensa) {
-            System.out.println("El número que me has dicho es más grande, dime otro más pequeño.");
+            System.out.println("El número que me has dicho es más grande, dime otro más PEQUEÑO.");
         }
         else if (numero == ordenador_piensa) {
-            System.out.println("¡¡Has acertado!!");
+            System.out.println("¡¡Has acertado!! El número era " + ordenador_piensa + ".");
         } 
       } while (numero != ordenador_piensa);
       
@@ -28,3 +28,5 @@ public class JuegoAdivinanza {
 
     }
 }
+
+
