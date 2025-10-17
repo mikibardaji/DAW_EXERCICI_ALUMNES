@@ -8,23 +8,28 @@ public class Ex13P2 {
          * y el usuario escribe, 
          * si lo acierta para el juego, si no el ordenador debe decir mayor o menor.
          */
-        int limite_inferior = 1;
-        int limite_superior = 100;
-        int ordenador_piensa;
         Scanner sc = new Scanner(System.in);
         Random rd = new Random();
-         do{
-                ordenador_piensa= rd.nextInt(limite_inferior, limite_superior + 1);
-                System.out.println("He pensado el numero: " + ordenador_piensa + " he acertado (=,m(Menor),y(Meyor))?");
-                char respuesta = sc.next().charAt(0);
-                if(respuesta == '='){
-                    System.out.println("Has acertado");
-                }else if(respuesta == 'Y'){
-                    limite_superior = ordenador_piensa;
-                    System.out.println("Es mayor");
-                }else{
-                    System.out.println("Es menor");
-                }
-            }while(true);
+        int num_maquina = rd.nextInt(1, 101);
+        int usuario, contador=0;
+        //System.out.println("he pensado " + num_maquina);
+        do {
+        System.out.println("Que numero crees que he pensado?");
+        usuario = sc.nextInt();
+        contador++;
+        if (usuario == num_maquina){
+            System.out.println("Has acertado");
+        } else if (usuario < num_maquina){
+            System.out.println("Es mayor");
+        } else if (usuario > num_maquina){
+            System.out.println("Es menor");
+        }
+        }while (usuario != num_maquina && contador<=6);
+
+        if (usuario == num_maquina) {
+            System.out.println("Has acertado");
+        }else if (usuario != num_maquina) {
+            System.out.println("Has perdido");
+        }
     }
 }
