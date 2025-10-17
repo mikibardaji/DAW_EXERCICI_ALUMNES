@@ -7,9 +7,8 @@ public class IteratiusEx13 {
         Scanner sc = new Scanner(System.in);
         int ordenador_piensa = rd.nextInt(1,101);
         int usuario;
+        int contador = 1;
 
-        System.out.println("He pensado " + ordenador_piensa);
-        
         do{
         System.out.println("Que numero crees que he elegido ");
         usuario = sc.nextInt();
@@ -25,9 +24,19 @@ public class IteratiusEx13 {
         else if ( usuario > ordenador_piensa){
             System.out.println("El numero es menor");
         }
-    }while(usuario!=ordenador_piensa);
+
+        contador = contador + 1; 
+    }while(usuario!=ordenador_piensa && contador<=6);
+
+    if (usuario == ordenador_piensa) {
+        System.out.println("Has ganado");
+        
+    }
+
+    else{
+        System.out.println("Has perdido");
+    }
       
     }
 
 }
-
