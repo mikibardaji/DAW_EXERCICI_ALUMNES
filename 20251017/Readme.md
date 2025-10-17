@@ -25,9 +25,9 @@
 
 - La dificultat no importa (pot ser fàcil), però ha de tenir sentit total (per exemple, un problema real com el d’un caixer automàtic).
 
-- No creeu solucions amb bucles quan no sigui necessari.
+- No creeu solucions amb bucles quan no sigui necessari (exemple : programa que et resti els diners d'un total, pero a dins fiquis un bucle que no faci cap cosa important per aconseguir el resultat final).
 
-- Aneu amb compte que l’enunciat i la solució siguin coherents.
+- Aneu amb compte que l’enunciat i la solució siguin coherents. La invenció del enunciat te que ser vostra, no redactada pel chatgpt.
 
 ---
 
