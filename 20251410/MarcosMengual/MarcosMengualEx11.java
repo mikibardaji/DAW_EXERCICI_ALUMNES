@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class intentaadivinar {
+public class MarcosMengualEx11 {
 
     public static void main(String[] args) {
         Random rd = new Random();
@@ -30,3 +30,4 @@ public class intentaadivinar {
 
     }
 }
+
