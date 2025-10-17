@@ -38,4 +38,4 @@ De tots els exercicis pujats, en triaré un (sense dir quin) que estarà a l’e
 Només podran fer aquest exercici els qui hagin penjat un enunciat i la solució. Si no n’heu penjat cap, els 2 punts seran un exercici inventat pel professor.
 
 Penja l’enunciat i la solució dins la carpeta:  
-`problemes_per_examen`
+[`problemes_per_examen`](./problemes_examen)
