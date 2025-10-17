@@ -6,10 +6,9 @@
 
 ## Exercicis
 
-1. **Exercici 1 - Clash Royale**  
+1. **[Exercici 1 - Clash Royale](https://docs.google.com/document/d/1JdPgJ2xjkbMRKXVlKU9I4cLi0Q5wKSXFqqwNpKlUjWc/edit?pli=1&tab=t.0)**  
    Implementa fins a la versió mínima 2. Seria ideal que fessis totes les versions.
-
-2. **Exercici 2 - Joc de la Wii**  
+2. **[Exercici 2 - Joc de la Wii](https://docs.google.com/document/d/1JdPgJ2xjkbMRKXVlKU9I4cLi0Q5wKSXFqqwNpKlUjWc/edit?pli=1&tab=t.0)**  
    Completa l'exercici tal com s'ha indicat.
 
 3. **Exercici de reforç**  
