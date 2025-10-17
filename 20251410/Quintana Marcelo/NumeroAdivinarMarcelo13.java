@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class DeberesMarcelo {
+public class NumeroAdivinarMarcelo13 {
     public static void main(String[] args) {
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
