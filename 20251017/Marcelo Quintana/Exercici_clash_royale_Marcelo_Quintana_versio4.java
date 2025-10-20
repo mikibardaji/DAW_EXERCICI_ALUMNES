@@ -12,7 +12,7 @@ public class Exercici_clash_royale_Marcelo_Quintana_versio4 {
         int nivelLenyador;
         int dano = 0;
 
-        // Validación del nivel del leñador (Versión 4)
+        // (Versión 4)
         do {
             System.out.println("Introduce el nivel del leñador (9-13): ");
             nivelLenyador = sc.nextInt();
@@ -41,31 +41,7 @@ public class Exercici_clash_royale_Marcelo_Quintana_versio4 {
         int ataqueTorre = 0;
 
      
-        if (nivelTorre == 1) {
-            vidaTorre = 1400;
-            ataqueTorre = 50;
-         } else if (nivelTorre == 2) {
-            vidaTorre = 1512;
-            ataqueTorre = 54;
-        } else if (nivelTorre == 3) {
-            vidaTorre = 1624;
-            ataqueTorre = 58;
-        } else if (nivelTorre == 4) {
-            vidaTorre = 1750;
-            ataqueTorre = 62;
-        } else if (nivelTorre == 5) {
-            vidaTorre = 1890;
-            ataqueTorre = 67;
-        } else if (nivelTorre == 6) {
-            vidaTorre = 2030;
-            ataqueTorre = 72;
-        } else if (nivelTorre == 7) {
-            vidaTorre = 2184;
-            ataqueTorre = 78;
-        } else if (nivelTorre == 8) {
-            vidaTorre = 2352;
-            ataqueTorre = 84;
-        } else if (nivelTorre == 9) {
+      if (nivelTorre == 9) {
             vidaTorre = 2534;
             ataqueTorre = 90;
         } else if (nivelTorre == 10) {
@@ -85,7 +61,7 @@ public class Exercici_clash_royale_Marcelo_Quintana_versio4 {
         System.out.println("La torre enemiga es de nivel " + nivelTorre + " y tiene " + vidaTorre + " puntos de vida.");
 
 
-        // Versión 1 - Bucle
+        // Versión 1 
         int vidaActualTorre = vidaTorre;
         int golpes = 0;
 
@@ -161,3 +137,4 @@ public class Exercici_clash_royale_Marcelo_Quintana_versio4 {
 
     }
 }
+
