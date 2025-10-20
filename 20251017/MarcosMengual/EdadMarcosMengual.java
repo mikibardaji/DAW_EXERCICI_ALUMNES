@@ -8,6 +8,7 @@ public class Edad {
         int añoActual = Year.now().getValue();
         int edad;
         int añoNacimiento;
+        int edadEnEseAño;
 
         System.out.print("Introduce tu edad actual: ");
         edad = sc.nextInt();
@@ -18,9 +19,10 @@ public class Edad {
         System.out.println("Has nacido en el año " + añoNacimiento + "");
 
         for (int año = añoActual; año >= añoNacimiento; año--) {
-            int edadEnEseAnio = año - añoNacimiento;
-            System.out.println("En el año " + año + " tenías " + edadEnEseAnio + " años");
+            edadEnEseAño = año - añoNacimiento;
+            System.out.println("En el año " + año + " tenías " + edadEnEseAño + " años");
         }
 
     }
+
 }
