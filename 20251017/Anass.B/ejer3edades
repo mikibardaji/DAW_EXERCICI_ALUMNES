@@ -1,0 +1,26 @@
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+public class ejer3edad {
+public static void main(String[] args) {
+ 
+    Scanner sc = new Scanner(System.in);
+
+ 
+    // Escribe un programa que pida la edad y a partir del año que nos encontramos, nos muestre la edad que tenia el usuario en cada año hasta su nacimiento.
+
+System.out.println("Cuantos años tienes?");
+int edad = sc.nextInt();
+   LocalDateTime hoy = LocalDateTime.now();  
+int año_actual = hoy.getYear();
+
+while (edad>0) {
+ 
+ --año_actual;
+--edad;
+System.out.println("Año -> " + año_actual + " Edad -> " + edad);
+}
+  
+
+}
+}
