@@ -8,49 +8,49 @@ public static void main(String[] args) throws InterruptedException {
 
         System.out.println("----- JOC DELS PETARDS -----");
         System.out.print("Tria quin petard vols (1, 2 o 3): ");
-        int eleccio = sc.nextInt();
-
+         int eleccion = sc.nextInt();
+ 
         
-        int petard1 = rd.nextInt(21);
-        int petard2 = rd.nextInt(21);
-        int petard3 = rd.nextInt(21);
+      int petardo1 = rd.nextInt(21);
+          int petardo2 = rd.nextInt(21);
+          int petardo3 = rd.nextInt(21);
 
         System.out.println();
         System.out.println("Explosió dels petards!");
 
         
-        System.out.println("Petard 1:");
-        for (int i = 0; i < petard1; i++) {
+        System.out.println("Petardo 1:");
+        for (int i = 0; i < petardo1; i++) {
             System.out.print("*");
             Thread.sleep(500);
         }
-        System.out.println("(" + petard1 + " metres)");
+        System.out.println("(" + petardo1 + " metres)");
 
-        System.out.println("Petard 2:");
-        for (int i = 0; i < petard2; i++) {
+        System.out.println("Petardo 2:");
+        for (int i = 0; i < petardo2; i++) {
             System.out.print("*");
             Thread.sleep(500);
         }
-        System.out.println("(" + petard2 + " metres)");
+        System.out.println("(" + petardo2 + " metres)");
 
-        System.out.println("Petard 3:");
-        for (int i = 0; i < petard3; i++) {
+        System.out.println("Petardo 3:");
+        for (int i = 0; i < petardo3; i++) {
             System.out.print("*");
             Thread.sleep(500);
         }
-        System.out.println("(" + petard3 + " metres)");
+        System.out.println("(" + petardo3 + " metres)");
 
         
-        int max = Math.max(petard1, Math.max(petard2, petard3));
-        boolean guanyat = false;
+        int max = Math.max(petard1, Math.max(petardo2, petardo3));
+        boolean ganado = false;
 
-        if ((eleccio == 1 && petard1 == max) ||
-            (eleccio == 2 && petard2 == max) ||
-            (eleccio == 3 && petard3 == max)) {
-            guanyat = true;
+        if ((eleccion == 1 && petardo1 == max) ||
+            (eleccion == 2 && petardo2 == max) ||
+            (eleccion == 3 && petardo3 == max)) {
+            ganado = true;
         }
 
-        if (guanyat) {
+        if (ganado) {
             System.out.println("Has ganado! Tu petardo ha sido del mas largo!");
         } else {
             System.out.println("Has perdido! Otro petardo ha llegado mas lejos...");
@@ -59,4 +59,5 @@ public static void main(String[] args) throws InterruptedException {
 
 }
 }
+
 
