@@ -7,10 +7,10 @@ public class Exercici_addicional_Marcelo_Quintana {
         int total = 0;
         int numero;
 
-        System.out.println("Introdueix números positius. Un número negatiu acabarà el programa.");
+        System.out.println("Introdueix numeros positius. Un numero negatiu acabara el programa.");
 
         while (true) {
-            System.out.print("Número: ");
+            System.out.print("Numero: ");
             numero = sc.nextInt();
 
             if (numero < 0) {
@@ -20,7 +20,7 @@ public class Exercici_addicional_Marcelo_Quintana {
             total= total + numero;
         }
 
-        System.out.println("La suma total dels números positius és: " + total);
+        System.out.println("La suma total dels numeros positius és: " + total);
 
     
 
