@@ -41,7 +41,7 @@ public static void main(String[] args) throws InterruptedException {
         System.out.println("(" + petardo3 + " metres)");
 
         
-        int max = Math.max(petard1, Math.max(petardo2, petardo3));
+        int max = Math.max(petardo1, Math.max(petardo2, petardo3));
         boolean ganado = false;
 
         if ((eleccion == 1 && petardo1 == max) ||
@@ -59,5 +59,6 @@ public static void main(String[] args) throws InterruptedException {
 
 }
 }
+
 
 
