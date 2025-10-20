@@ -10,7 +10,7 @@ public static void main(String[] args) throws InterruptedException {
         System.out.print("Tria quin petard vols (1, 2 o 3): ");
         int eleccio = sc.nextInt();
 
-        // Valors aleatoris entre 0 i 20
+        
         int petard1 = rd.nextInt(21);
         int petard2 = rd.nextInt(21);
         int petard3 = rd.nextInt(21);
@@ -18,7 +18,7 @@ public static void main(String[] args) throws InterruptedException {
         System.out.println();
         System.out.println("Explosió dels petards!");
 
-        // Pintem cada petard en vertical
+        
         System.out.println("Petard 1:");
         for (int i = 0; i < petard1; i++) {
             System.out.print("*");
@@ -40,7 +40,7 @@ public static void main(String[] args) throws InterruptedException {
         }
         System.out.println("(" + petard3 + " metres)");
 
-        // Comprovem si l’usuari ha guanyat
+        
         int max = Math.max(petard1, Math.max(petard2, petard3));
         boolean guanyat = false;
 
@@ -59,3 +59,4 @@ public static void main(String[] args) throws InterruptedException {
 
 }
 }
+
