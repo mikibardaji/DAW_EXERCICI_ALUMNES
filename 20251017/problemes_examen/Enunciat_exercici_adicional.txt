@@ -1,0 +1,2 @@
+Aquest programa comptarà només els números positius que introdueixi l’usuari.
+Quan l’usuari introdueixi un número negatiu, el programa s’aturarà i mostrarà la suma total dels números positius introduïts.
