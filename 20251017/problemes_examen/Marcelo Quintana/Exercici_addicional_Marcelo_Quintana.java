@@ -17,7 +17,7 @@ public class Exercici_addicional_Marcelo_Quintana {
                 break; // sortim del bucle si és negatiu
             }
 
-            total += numero;
+            total= total + numero;
         }
 
         System.out.println("La suma total dels números positius és: " + total);
