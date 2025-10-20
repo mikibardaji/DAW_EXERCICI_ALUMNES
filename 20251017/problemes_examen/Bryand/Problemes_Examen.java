@@ -24,9 +24,10 @@ public class Problemes_Examen {
         }
 
         System.out.println("Resultats:");
-        System.out.println("Números parells: " + pares);
-        System.out.println("Números senars: " + nones);
+        System.out.println("Numeros pares: " + pares);
+        System.out.println("Numeros nones: " + nones);
         System.out.println("Suma total: " + resta);
 
     }
+
 }
