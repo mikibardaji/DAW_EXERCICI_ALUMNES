@@ -1,2 +1,0 @@
-El programa tindra que demanar al usuari numeros constantment fins que escrigui un negatiu o 0,
-cuan escrigui aquets el programa acaba, i haura de comptar tots els numeros parells, sense sumar el ultim.
