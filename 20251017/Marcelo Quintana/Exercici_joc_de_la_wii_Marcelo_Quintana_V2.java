@@ -3,10 +3,10 @@ import java.util.Random;
 
 public class Exercici_joc_de_la_wii_Marcelo_Quintana_V2 {
     public static void main(String[] args) throws InterruptedException {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Random aleatori = new Random();
         System.out.print("Escull quin petard vols fer explotar (1, 2 o 3): ");
-        int eleccio = entrada.nextInt();
+        int eleccio = sc.nextInt();
 
        
         int petard1 = aleatori.nextInt(21);
@@ -69,3 +69,4 @@ public class Exercici_joc_de_la_wii_Marcelo_Quintana_V2 {
 
     }
 }
+
