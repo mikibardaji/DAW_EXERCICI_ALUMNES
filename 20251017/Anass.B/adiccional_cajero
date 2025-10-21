@@ -1,0 +1,38 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class ejer_extra {
+public static void main(String[] args) {
+
+    /*un cajero automatico para poder retirar varias veces dinero.
+     Preguntar cuanto quiere retirar y restarlo de su saldo.
+     Acaba cuando marque 0 o cuando no quede saldo */
+        Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+        int saldo = rd.nextInt(10,5000); 
+        int retiro;
+
+
+        System.out.println("Saldo inicial: " + saldo + " eurps");
+
+        while (saldo > 0) {
+            System.out.println("Cuánto deseas retirar? 0 para cerrar sesion ");
+            retiro = sc.nextInt();
+
+            if (retiro == 0) {
+                break;
+            }
+
+            if (retiro > saldo) {
+                System.out.println("No tienes suficiente saldo");
+            } else {
+                saldo -= retiro;
+                System.out.println("Has retirado " + retiro + " euros. Saldo restante: " + saldo + " euros");
+            }
+        }
+
+        System.out.println("Operación finalizada. Saldo restante: " + saldo + " euros");
+        
+    }
+
+}
