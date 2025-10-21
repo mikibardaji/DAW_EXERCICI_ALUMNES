@@ -1,1 +1,0 @@
-Un programa que te calcula la temperatura ideal del horno para cocinar una tarta.
