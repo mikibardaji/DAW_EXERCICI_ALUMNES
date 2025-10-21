@@ -1,0 +1,129 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class ejerclashroy {
+public static void main(String[] args) throws InterruptedException {
+    
+    Scanner sc = new Scanner(System.in);
+    Random rd = new Random();
+
+   int daño_lenador = 0, vida_lenador = 0;
+    int daño_torre = 0, vida_torre = 0;
+    int contador_golpes_leñ = 0;
+   int contador_golpes_tor = 0;
+int nivel_lenador = 9, nivel_torre = 1;
+        
+    do {
+    System.out.println("Que nivel tiene tu leñador? del 9 al 13");
+    nivel_lenador = sc.nextInt();
+    System.out.println("Que nivel tiene la torre atacada? del 1 al 15");
+    nivel_torre = sc.nextInt();
+    if (nivel_lenador<9 || nivel_lenador>13 || nivel_torre<1 || nivel_torre>15) {
+        System.out.println("Valor incorrecto");
+    }
+   } while (nivel_lenador<9 || nivel_lenador>13 || nivel_torre<1 || nivel_torre>15);
+
+    
+      if (nivel_lenador==9) {
+        daño_lenador = 200;
+        vida_lenador = 1060;
+    }
+    else if (nivel_lenador==10) {
+        daño_lenador = 220;
+        vida_lenador = 1166;
+    }
+    else if (nivel_lenador==11) {
+        daño_lenador = 242;
+        vida_lenador = 1282;
+    }
+    else if (nivel_lenador==12) {
+        daño_lenador = 266;
+        vida_lenador = 1409;
+    }
+    else if (nivel_lenador==13) {
+        daño_lenador = 292;
+        vida_lenador = 1547;
+    } else {
+        System.out.println("Nivel de leñador no válido");
+    }
+    System.out.println("NIVEL LEÑADOR *" + nivel_lenador + "*");
+    System.out.println("LEÑADOR VIDA -> " + vida_lenador + ".  DAÑO -> " + daño_lenador);
+
+ 
+    if (nivel_torre == 1) {
+    daño_torre = 50;
+    vida_torre = 1400;
+    } else if (nivel_torre == 2) {
+        daño_torre = 54;
+        vida_torre = 1512;
+    } else if (nivel_torre == 3) {
+        daño_torre = 58;
+        vida_torre = 1624;
+    } else if (nivel_torre == 4) {
+        daño_torre = 62;
+        vida_torre = 1750;
+    } else if (nivel_torre == 5) {
+        daño_torre = 67;
+        vida_torre = 1890;
+    } else if (nivel_torre == 6) {
+        daño_torre = 72;
+        vida_torre = 2030;
+    } else if (nivel_torre == 7) {
+        daño_torre = 78;
+        vida_torre = 2184;
+    } else if (nivel_torre == 8) {
+        daño_torre = 84;
+        vida_torre = 2352;
+    } else if (nivel_torre == 9) {
+        daño_torre = 90;
+        vida_torre = 2534;
+    } else if (nivel_torre == 10) {
+        daño_torre = 99;
+        vida_torre = 2786;
+    } else if (nivel_torre == 11) {
+        daño_torre = 109;
+        vida_torre = 3052;
+    } else if (nivel_torre == 12) {
+        daño_torre = 119;
+        vida_torre = 3346;
+    } else if (nivel_torre == 13) {
+        daño_torre = 131;
+        vida_torre = 3668;
+    } else if (nivel_torre == 14) {
+        daño_torre = 144;
+        vida_torre = 4032;
+    } else if (nivel_torre == 15) {
+        daño_torre = 158;
+        vida_torre = 4424;
+    } else {
+        System.out.println("Nivel de torre no válido");
+    }
+System.out.println("NIVEL TORRE *" + nivel_torre + "*");
+System.out.println("TORRE VIDA -> " + vida_torre + ".  DAÑO -> " + daño_torre);
+
+
+    while (vida_torre>0 && vida_lenador>0) {
+        Thread.sleep(500);
+        ++contador_golpes_leñ;
+        contador_golpes_tor += 2;
+        int doble_dañ_torre = daño_torre*2;
+    vida_lenador = vida_lenador - doble_dañ_torre;
+        
+    vida_torre = vida_torre - daño_lenador;
+    
+
+    System.out.println("Leñador ataca con fuerza de " + daño_lenador + " daño, y vida de torre restante " + vida_torre);
+
+   System.out.println("Torre ataca con fuerza de " + doble_dañ_torre + " daño, y vida de leñador restante " + vida_lenador);             
+    }
+
+    if (vida_lenador<=0) {
+        System.out.println("Ha ganado la torre, le queda " + vida_torre + " de vida");
+    }
+    else if (vida_torre<=0) {
+        System.out.println("Ha ganado el leñador, le queda " + vida_lenador + " de vida");
+    }
+System.out.println("Leñador ha atacado " + contador_golpes_leñ + " veces.");
+System.out.println("Torre ha atacado " + contador_golpes_tor + " veces."); 
+}
+}
