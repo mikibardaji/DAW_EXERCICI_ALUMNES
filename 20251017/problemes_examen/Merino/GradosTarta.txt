@@ -1,1 +1,1 @@
-Un programa que te calcula la temperatura ideal del horno para cocinar una tarta.
+Un programa que te calcula la temperatura ideal del horno para cocinar una tarta entre 160º y 220º.
