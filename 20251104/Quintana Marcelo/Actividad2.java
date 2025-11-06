@@ -7,7 +7,7 @@ public class Actividad2_Marcelo_Quintana{
         Scanner sc = new Scanner(System.in);
         int edad;
 
-        System.out.print("Introduce tu edad: ");
+        System.out.print("Dime tu edad: ");
         edad = sc.nextInt();
 
         if (esMayorEdad(edad)) {
@@ -26,4 +26,5 @@ public class Actividad2_Marcelo_Quintana{
         }
     }
 }
+
 
