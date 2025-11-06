@@ -12,11 +12,11 @@ public class Actividad4_Marcelo_Quintana{
         int signo = dimeSigno(num);
 
         if (signo == -1) {
-            System.out.println("El número es negativo.");
+            System.out.println("El numero es negativo.");
         } else if (signo == 0) {
-            System.out.println("El número es cero.");
+            System.out.println("El numero es cero.");
         } else {
-            System.out.println("El número es positivo.");
+            System.out.println("El numero es positivo.");
         }
     }
   
@@ -31,3 +31,4 @@ public class Actividad4_Marcelo_Quintana{
     }
 
 }
+
