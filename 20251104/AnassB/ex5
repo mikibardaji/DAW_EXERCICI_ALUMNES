@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class ejericio5funcionales {
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+System.out.print("Dima las millas para convertir en km: ");
+int millas = sc.nextInt();
+
+System.out.println(millas + " millas son " + millas_a_kilometros(millas) + " km");
+
+}
+public static double millas_a_kilometros(int millas){
+double un_km = 1.60934;
+    return millas*un_km;
+}
+}
