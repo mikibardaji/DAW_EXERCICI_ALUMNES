@@ -5,7 +5,7 @@ public class Actividad5_Marcelo_Quintana {
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
-     System.out.print("Introduce tu distancia en millas: ");
+     System.out.print(" Dime tu distancia en millas: ");
      int millas =  sc.nextInt();
 
 
@@ -16,4 +16,5 @@ public class Actividad5_Marcelo_Quintana {
      return  millas * 1.60934;
     }
 }
+
 
