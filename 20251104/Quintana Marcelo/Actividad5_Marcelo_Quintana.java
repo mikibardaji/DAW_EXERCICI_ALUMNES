@@ -13,10 +13,10 @@ public class Actividad5_Marcelo_Quintana {
     System.out.println(millas + " millas equivalen a " + kilometros + " kilometros.");
     }
   
-       public static double millas_a_kilometros(int millas) {
-      
-         return  millas * 1.60934;
+     double operacion = millas * 1.60934;
+        return operacion;
     }
 
    
 }
+
