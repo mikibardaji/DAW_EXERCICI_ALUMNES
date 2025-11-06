@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Actividad2 {
+public class Actividad2_Marcelo_Quintana{
 
     public static void main(String[] args) {
 
@@ -26,3 +26,4 @@ public class Actividad2 {
         }
     }
 }
+
