@@ -6,10 +6,10 @@ public class Actividad3_Marcelo_Quintana{
 
        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Introduce el primer número entero: ");
+        System.out.print("Escribe el primer número entero: ");
         int num1 = sc.nextInt();
 
-        System.out.print("Introduce el segundo número entero: ");
+        System.out.print("Escribe el segundo número entero: ");
         int num2 = sc.nextInt();
 
         int menor = minimo(num1, num2);
@@ -27,4 +27,5 @@ public class Actividad3_Marcelo_Quintana{
         }
     }
 }
+
 
