@@ -1,0 +1,12 @@
+public class ejer5 {
+public static void main(String[] args) {
+
+marcador(0, 0);
+}
+
+public static void marcador(int point_player1, int point_player2) {
+    System.out.println("MARACDOR");
+    System.out.println("Player 1: " + point_player1 + " puntos.");
+    System.out.println("Player 2: " + point_player2 + " puntos.");
+}
+}
