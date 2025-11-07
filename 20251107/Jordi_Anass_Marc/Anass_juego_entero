@@ -1,0 +1,61 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class juego_enetero {
+
+    public static int puntosPartida() {
+        Scanner sc = new Scanner(System.in);
+        int puntos = -1;
+
+        do {
+            System.out.print("¿A cuántos puntos quieres jugar? (1-20): ");
+            if (sc.hasNextInt()) {
+                puntos = sc.nextInt();
+                if (puntos < 1 || puntos > 20) {
+                    System.out.println(" Valor no válido. Debe ser entre 1 y 20.");
+                }
+            } else {
+                System.out.println(" Debes introducir un número entero.");
+            }
+        } while (puntos < 1 || puntos > 20);
+
+        return puntos;
+         
+    }
+
+    public static int jugada() {
+        Scanner sc = new Scanner(System.in);
+        int opcion = -1;
+
+        do {
+            System.out.print("¿Qué sacas? (0 piedra, 1 papel, 2 tijera): ");
+            if (sc.hasNextInt()) {
+                opcion = sc.nextInt();
+                if (opcion < 0 || opcion > 2) {
+                    System.out.println(" Valor no válido. Intenta de nuevo.");
+                }
+            } else {
+                System.out.println(" Debes introducir un número (0, 1 o 2).");
+            }
+        } while (opcion < 0 || opcion > 2);
+
+        return opcion;
+    }
+    public static int jugada_ordenador(){
+    Random rd = new Random();
+    int valor_aleatorio = rd.nextInt(0,3);
+    return valor_aleatorio;
+    }   
+    
+
+    public static void main(String[] args) {
+        int maxPuntos = puntosPartida();
+        System.out.println("La partida será a " + maxPuntos + " puntos.");
+
+
+         int eleccion = jugada();
+         System.out.println(jugada_ordenador());
+    }
+    
+
+}
