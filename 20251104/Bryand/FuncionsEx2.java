@@ -7,16 +7,17 @@ public class FuncionsEx2 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-    do{
-        System.out.print("Introduce tu edad: ");
-        int edad = sc.nextInt();
-    }while( edad<=0 );
-        if (mayor(edad)) {
+        int edad_usuario;
+
+        do {
+            System.out.print("Introduce tu edad: ");
+            edad_usuario = sc.nextInt();
+        } while (edad_usuario <= 0);
+
+        if (mayor(edad_usuario)) {
             System.out.println("Eres mayor de edad");
         } else {
             System.out.println("Eres menor de edad");
         }
     }
 }
-
