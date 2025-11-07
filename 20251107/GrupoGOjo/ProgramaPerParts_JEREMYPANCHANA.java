@@ -153,3 +153,4 @@ ganado", si es 2 debe imprimi que ha ganado el ordenador 0,5 ptos
     
     
 }
+
