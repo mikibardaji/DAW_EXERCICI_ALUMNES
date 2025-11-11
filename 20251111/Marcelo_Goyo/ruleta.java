@@ -86,7 +86,7 @@ public class ruleta {
             } else if (quantitataposta == 0) {
                 System.out.println("Has salido del juego");
             }
-        } while (quantitataposta < 0);
+        } while (quantitataposta < 0 || quantitataposta != 0);
         return quantitataposta;
     }
 
@@ -122,3 +122,4 @@ public class ruleta {
     }
 
 }
+
