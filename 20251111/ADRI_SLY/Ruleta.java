@@ -96,7 +96,7 @@ public class Ruleta {
             System.out.println("Quin tipus d'aposta vols fer? 1/36 Numero concret, -1 SENAR, -2 PARELL");
             apuesta = sc.nextInt();
 
-        } while (apuesta < -2 || apuesta > 36);
+        } while (!(apuesta == -1 || apuesta == -2 || (apuesta >= 1 && apuesta <= 36)));
 
         return apuesta;
     }
