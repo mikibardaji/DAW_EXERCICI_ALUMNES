@@ -13,15 +13,17 @@ public class Ruleta {
 
         int quentidad_apostar = QuantitatAposta(0);
 
-        System.out.println("Has apostado: " + quentidad_apostar + "quantidad.");
+        System.out.println("Has apostado: " + quentidad_apostar + " quantidad.");
 
+        int saldo = 500;
+        int total = AfegirPunts(saldo);
+        System.out.println(total);
+        int puntos = 700;
+        int aposta = apostaPunts(saldo, puntos);
+        System.out.println(aposta);
+        int tipus = tipusAposta();
+        System.out.println(tipus);
     }
-    /*
-     * Funció pintaAsterisc: rep un número enter i imprimeix per
-     * pantalla tants asteriscs com indiqui el número rebut.
-     * Els asteriscs s'han de pintar amb linea (com es va demanar al examen)
-     * Al final dels asterisc pintar el numero.
-     */
 
     public static void pintaAsterisc(int numero) {
 
@@ -36,7 +38,7 @@ public class Ruleta {
         return rand.nextInt(0, 37);
     }
 
-    public static int QuantitatAposta(int cantidad){
+    public static int QuantitatAposta(int cantidad) {
         Scanner sc = new Scanner(System.in);
         System.out.println(" Introduce la cantidad a apostar: ");
         cantidad = sc.nextInt();
@@ -44,16 +46,46 @@ public class Ruleta {
 
     }
 
-    public static int resultatJugada (int tipusAposta,int saldo,int puntsAposta,int bola){
+    public static int resultatJugada(int tipusAposta, int saldo, int puntsAposta, int bola) {
         int guany = 0;
-        if (tipusAposta == bola){
+        if (tipusAposta == bola) {
             guany = puntsAposta * 36;
         } else {
             guany = puntsAposta;
-        }if (tipusAposta == -1 || tipusAposta == -2){
+        }
+        if (tipusAposta == -1 || tipusAposta == -2) {
             guany = puntsAposta * 2;
         }
         return guany;
+    }
+
+    public static int AfegirPunts(int saldo) {
+        Scanner sc = new Scanner(System.in);
+        int AfegirPunts;
+        System.out.println("Quants punts vols afegir al saldo?");
+        AfegirPunts = sc.nextInt();
+        return saldo + AfegirPunts;
+    }
+
+    public static int apostaPunts(int puntsTotal, int puntsAposta) {
+        Scanner sc = new Scanner(System.in);
+        int apostaPunts;
+        System.out.println("Quants punts vols apostar?");
+        puntsAposta = sc.nextInt();
+        if (puntsAposta <= puntsTotal) {
+            apostaPunts = puntsAposta;
+        } else {
+            apostaPunts = -1;
+        }
+        return apostaPunts;
+    }
+
+    public static int tipusAposta() {
+        Scanner sc = new Scanner(System.in);
+        int tipusAposta;
+        System.out.println("Quin tipus d'aposta vols fer? 1/36 Numero concret, -1 SENAR, -2 PARELL");
+        tipusAposta = sc.nextInt();
+        return tipusAposta;
     }
 
 }
