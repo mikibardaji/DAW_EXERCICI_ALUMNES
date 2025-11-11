@@ -42,13 +42,12 @@ public class Ruleta {
 
     public static int QuantitatAposta(int cantidad) {
 
-        
         Scanner sc = new Scanner(System.in);
-        do{
-        System.out.println(" Introduce la cantidad a apostar: ");
-        cantidad = sc.nextInt();
-        }while(cantidad < 0);
-        
+        do {
+            System.out.println(" Introduce la cantidad a apostar: ");
+            cantidad = sc.nextInt();
+        } while (cantidad < 0);
+
         return cantidad;
 
     }
@@ -92,10 +91,14 @@ public class Ruleta {
 
     public static int tipusAposta() {
         Scanner sc = new Scanner(System.in);
-        int tipo_aposta;
-        System.out.println("Quin tipus d'aposta vols fer? 1/36 Numero concret, -1 SENAR, -2 PARELL");
-        tipo_aposta = sc.nextInt();
-        return tipo_aposta;
+        int apuesta;
+        do {
+            System.out.println("Quin tipus d'aposta vols fer? 1/36 Numero concret, -1 SENAR, -2 PARELL");
+            apuesta = sc.nextInt();
+
+        } while (apuesta < -2 || apuesta > 36);
+
+        return apuesta;
     }
 
 }
