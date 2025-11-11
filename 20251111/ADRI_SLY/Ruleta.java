@@ -3,21 +3,23 @@ import java.util.Scanner;
 
 public class Ruleta {
     public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introdueix el saldo inicial:");
+        int saldo = sc.nextInt();
+
+        int total = AfegirPunts(saldo);
+        System.out.println(total);
+
+        int quentidad_apostar = QuantitatAposta(0);
+        System.out.println("Has apostado: " + quentidad_apostar + " quantidad.");
+
+        System.out.println("voy a imprimir un numero aleatorio entre 0 y 36");
+        System.out.println(bola());
 
         int num = 5;
         pintaAsterisc(num);
         System.out.println();
 
-        System.out.println("voy a imprimir un numero aleatorio entre 0 y 36");
-        System.out.println(bola());
-
-        int quentidad_apostar = QuantitatAposta(0);
-
-        System.out.println("Has apostado: " + quentidad_apostar + " quantidad.");
-
-        int saldo = 500;
-        int total = AfegirPunts(saldo);
-        System.out.println(total);
         int puntos = 700;
         int aposta = apostaPunts(saldo, puntos);
         System.out.println(aposta);
