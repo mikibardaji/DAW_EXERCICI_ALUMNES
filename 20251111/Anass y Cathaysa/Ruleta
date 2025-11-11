@@ -1,0 +1,85 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ruleta {
+    public static void main(String[] args) throws Exception {
+       
+        
+    }
+
+    public static int QuantitatAposta() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("¿Qué cantidad queres apostar? (Que no sea número negativo.) ");
+        int cantidad_apuesta = sc.nextInt();
+        while (cantidad_apuesta <= -1) {
+            System.out.println("Pon un número positivio");
+        cantidad_apuesta = sc.nextInt();
+        }
+        return cantidad_apuesta;
+    }
+
+    public static int AfegirPunts(int saldo){
+
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("¿Cuántos puntos quieres añadir al saldo?");
+        saldo = sc.nextInt();
+        return saldo;
+    }
+    public static void pintaAsterisc(int numero){
+
+for (int i = 0; i< numero; i++) {
+    System.out.print("*");
+}
+}
+
+public static int bola(){
+    Random rd = new Random();
+    int bola = rd.nextInt(0,37);
+    return bola; 
+}
+
+public static int tipusAposta() {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Que tipo de apuesta quieres hacer? ");
+    System.out.println("-2 -> Pares");
+    System.out.println("-1 -> Impares");
+    System.out.println("1 al 36 -> num. en concreto");
+    int tipo_apuesta = sc.nextInt();
+
+    while (tipo_apuesta == 0 || tipo_apuesta > 36 || tipo_apuesta < -2) {
+        System.out.println("Valor incorrecto");
+        System.out.println("Que tipo de apuesta quieres hacer? ");
+        tipo_apuesta = sc.nextInt();
+    }
+    return tipo_apuesta;
+}
+
+public static int apostaPunts(int puntsTotal, int puntsAposta){
+
+    if (puntsTotal < puntsAposta) {
+        System.out.println("Saldo insuficiente, recarga.");
+        return -1;
+    }
+    return puntsAposta;
+ }   
+
+public static int resultatJugada(int tipusAposta, int saldo, int puntsAposta, int bola){
+int acierta_num = 0;
+    if (bola == tipusAposta) {
+        acierta_num = puntsAposta*36;
+        System.out.println("Has ganado : "+ acierta_num);
+        
+    } else if (bola %2 == 0 && tipusAposta == -2) {
+        acierta_num = puntsAposta*2;
+    } else if (bola %1 == 0 && tipusAposta == -1) {
+        acierta_num = puntsAposta*2;
+    }
+
+    int nuevo_saldo = acierta_num + saldo;
+
+    return nuevo_saldo;
+}
+    
+
+}
