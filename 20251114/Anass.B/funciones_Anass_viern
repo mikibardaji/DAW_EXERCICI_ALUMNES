@@ -1,0 +1,97 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class funciones_Anass_viern {
+
+
+public static void main(String[] args) {
+System.out.println(banca_demana_carta(7, 6));
+    }
+
+
+public static int numero_carta_aleatori() {
+Random rd = new Random();
+    int numero_aleaotio = rd.nextInt(1,11);
+    
+    if (numero_aleaotio == 8) {
+        return 10;
+    } else if (numero_aleaotio == 9) {
+        return 11;
+    } else if (numero_aleaotio == 10) {
+        return 12;
+    }
+    return numero_aleaotio;
+}
+
+public static int pal_carta_aleatori(){
+Random rd = new Random();
+    int palo_aleaotio = rd.nextInt(1,5);
+    return palo_aleaotio;
+}
+
+public static void imprimir_carta(int numero_carta_aleatori, int pal_carta_aleatori){
+Scanner sc = new Scanner(System.in);
+
+System.out.println("Número de la carta-> " + numero_carta_aleatori);
+
+System.out.println("Número del palo de la carta: ");
+System.out.println("1 serà el pal OROS");
+System.out.println("2 serà el pal BASTOS");
+System.out.println("3 serà el pal ESPADAS");
+System.out.println("4 serà el pal COPAS");
+
+
+if (pal_carta_aleatori == 1 && numero_carta_aleatori<10) {
+    System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es OROS");
+} else if (pal_carta_aleatori == 2 && numero_carta_aleatori<10) {
+    System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es BASTOS");
+} else if (pal_carta_aleatori == 3 && numero_carta_aleatori<10) {
+    System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es ESPADAS"); 
+} else if (pal_carta_aleatori == 4 && numero_carta_aleatori<10) {
+    System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es COPAS");
+} else if (numero_carta_aleatori == 10){
+     System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es SOTA");
+} else if (numero_carta_aleatori == 11){
+     System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es CABALLO");
+} else if (numero_carta_aleatori == 12){
+     System.out.println("Carta -> " + numero_carta_aleatori + " y numero de palo es REY");
+}
+
+}
+
+public static void punts_carta(int numero_carta_aleatori){
+double medio_punto = 0.5;
+if (numero_carta_aleatori>=1 && numero_carta_aleatori<=7) {
+    System.out.println("Puntos carta-> " + numero_carta_aleatori);
+} else System.out.println("Puntos carta-> " + medio_punto );
+}
+
+public static boolean banca_demana_carta(double punts_carta, double punts_banca){
+
+if (punts_carta>7.5) {
+    return false;
+} else if (punts_banca>punts_carta) {
+    return false;
+} else if (punts_banca>5) {
+    return false;
+}else if (punts_carta<=7.5) {
+    return true;  
+} else
+    return false;
+}
+
+public static boolean guanya_jugador(double punts_carta, double punts_banca){
+    if (punts_carta<=7.5) {
+        System.out.println("Ha ganado el jugador");
+        return true;
+    } else if (punts_carta>punts_banca) {
+         System.out.println("Ha ganado el jugador");
+        return true;
+    } else if (punts_banca>7.5) {
+       System.out.println("Ha ganado el jugador");
+        return true; 
+    } else System.out.println("Gana la banca");
+    return false;
+}
+
+}
