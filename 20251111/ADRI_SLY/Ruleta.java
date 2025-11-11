@@ -63,31 +63,34 @@ public class Ruleta {
 
     public static int AfegirPunts(int saldo) {
         Scanner sc = new Scanner(System.in);
-        int AfegirPunts;
-        System.out.println("Quants punts vols afegir al saldo?");
-        AfegirPunts = sc.nextInt();
-        return saldo + AfegirPunts;
+        int punt;
+        do {
+            System.out.println("Quants punts vols afegir al saldo?");
+            punt = sc.nextInt();
+        } while (punt < 0);
+
+        return saldo + punt;
     }
 
     public static int apostaPunts(int puntsTotal, int puntsAposta) {
         Scanner sc = new Scanner(System.in);
-        int apostaPunts;
+        int punt_apostar;
         System.out.println("Quants punts vols apostar?");
         puntsAposta = sc.nextInt();
         if (puntsAposta <= puntsTotal) {
-            apostaPunts = puntsAposta;
+            punt_apostar = puntsAposta;
         } else {
-            apostaPunts = -1;
+            punt_apostar = -1;
         }
-        return apostaPunts;
+        return punt_apostar;
     }
 
     public static int tipusAposta() {
         Scanner sc = new Scanner(System.in);
-        int tipusAposta;
+        int tipo_aposta;
         System.out.println("Quin tipus d'aposta vols fer? 1/36 Numero concret, -1 SENAR, -2 PARELL");
-        tipusAposta = sc.nextInt();
-        return tipusAposta;
+        tipo_aposta = sc.nextInt();
+        return tipo_aposta;
     }
 
 }
