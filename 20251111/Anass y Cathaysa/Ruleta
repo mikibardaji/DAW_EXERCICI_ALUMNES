@@ -31,6 +31,7 @@ public class Ruleta {
 for (int i = 0; i< numero; i++) {
     System.out.print("*");
 }
+System.out.println("-" + numero);
 }
 
 public static int bola(){
