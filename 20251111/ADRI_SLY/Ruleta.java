@@ -56,11 +56,17 @@ public class Ruleta {
         int guany = 0;
         if (tipusAposta == bola) {
             guany = puntsAposta * 36;
+            System.out.println("Has encertat el numero!");
         } else {
             guany = puntsAposta;
+            System.out.println("Has perdut la jugada.");
         }
         if (tipusAposta == -1 || tipusAposta == -2) {
             guany = puntsAposta * 2;
+            System.out.println("Has encertat la paritat!");
+            
+        }else if (!(tipusAposta == bola)) {
+            System.out.println("has ganado.");
         }
         return guany;
     }
