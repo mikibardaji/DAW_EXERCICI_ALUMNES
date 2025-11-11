@@ -54,17 +54,12 @@ public class GrupoDanielMohamedRULETA {
     }
     public static int tipusAposta(){
         Scanner sc = new Scanner(System.in);
+        int aposta;
+        do{
         System.out.println("quin tipus d’aposta vol fer? (-2 Parell | -1 Senar | 1-36 numero)");
-        int tipusAposta = sc.nextInt(); 
-        if(tipusAposta == -2){
-            return -2;
-        }
-        else if(tipusAposta == -1){
-            return -1;
-        }
-        else{
-            return tipusAposta;
-        }
+        aposta = sc.nextInt();
+        }while (!(aposta == -2 || aposta ==-1 || (aposta>=1 && aposta<=36)));
+        return aposta;
     }
     public static int resultatJugada(int tipusAposta, int saldo, int puntsAposta, int bola) {
     if (tipusAposta == bola) {
