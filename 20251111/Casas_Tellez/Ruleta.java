@@ -52,7 +52,7 @@ public class Ruleta {
     
     public static int bola() {
         Random rand = new Random();
-        int resultat = rand.nextInt(1, 37);
+        int resultat = rand.nextInt(0, 37);
         System.out.println("La bola ha caigut al numero: " + resultat);
         return resultat;
     }
@@ -120,4 +120,5 @@ public class Ruleta {
     }
     }
     
+
 
