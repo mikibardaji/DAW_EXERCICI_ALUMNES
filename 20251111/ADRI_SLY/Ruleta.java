@@ -41,9 +41,14 @@ public class Ruleta {
     }
 
     public static int QuantitatAposta(int cantidad) {
+
+        
         Scanner sc = new Scanner(System.in);
+        do{
         System.out.println(" Introduce la cantidad a apostar: ");
         cantidad = sc.nextInt();
+        }while(cantidad < 0);
+        
         return cantidad;
 
     }
