@@ -107,19 +107,19 @@ public class ruleta {
 
     }
 
+  
     public static int tipoApuesta() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Que tipo de apuesta haras?");
-        int tipoApuesta = sc.nextInt();
+        int apuesta;
 
-        if (tipoApuesta == -2) {
-            return -2;
-        } else if (tipoApuesta == -1) {
-            return -1;
-        } else {
-            return tipoApuesta;
-        }
+        do{
+        System.out.println("Que tipo de apuesta haras?");
+        apuesta = sc.nextInt();
+        } while (!(apuesta ==-2 || apuesta ==-1 || (apuesta >=1 && apuesta <=36)));
+        return apuesta;
     }
 
 }
+
+
 
