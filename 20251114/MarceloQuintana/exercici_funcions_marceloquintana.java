@@ -2,41 +2,29 @@ import java.util.Random;
 
 public class exercici_funcions_marceloquintana {
 public static void main(String[] args) {
-
-    //   int numero = numero_carta_aleatori();
-    //   int pal = pal_carta_aleatori();
-    //   imprimir_carta(pal, numero);
 }
+
 public static int numero_carta_aleatori(){
     Random rd = new Random();
-    int numero = rd.nextInt(1, 11);
+    int numAleatori = rd.nextInt(1, 11);
 
-
-    if (numero==8){
-
-        return 10;
-
+        if (numAleatori == 8) {
+                return 10;
+        }
+        else if (numAleatori == 9) {
+                return 11;
+        }
+        else if (numAleatori == 10) {
+                return 12;
+        }
+        return numAleatori;
     }
-    else if (numero==9){
-
-        return 11;
-    }
-
-    else if (numero ==10){
-
-        return 12;
-    }
-        
-    return numero;
-
-}
 
 
 public static int pal_carta_aleatori(){
     Random rd = new Random();
-    int numero = rd.nextInt(1, 5);
-
-    return numero;
+    int palAleatori = rd.nextInt(1, 5);
+    return palAleatori;
 }
 
 
