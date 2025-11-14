@@ -72,3 +72,4 @@ public class Funcion_JuegodeCarta {
         return (puntsJugador <= 7.5 && puntsJugador > puntsBanca) || (puntsBanca > 7.5);
     }
 }
+
