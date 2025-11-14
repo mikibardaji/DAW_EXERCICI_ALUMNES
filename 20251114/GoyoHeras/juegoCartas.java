@@ -1,14 +1,41 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class juegoCartas {
     public static void main(String[] args) {
 
+        int carta = numeroCartaAleatoria();
+        int palo = paloCartaAleatorio();
+        double puntosJugador = 0, puntosBanca = 0, puntosCarta;
+
+        do {
+            imprimirCarta(carta, palo);
+            puntosCarta = puntosCarta(carta);
+            puntosJugador = puntosJugador + puntosCarta;
+            System.out.println(puntosJugador);
+            System.out.println("Tu puntuacion es " + puntosJugador);
+            decision();
+        } while (decision() == 'n');
+
+        do{
+            carta = numeroCartaAleatoria();
+            palo = paloCartaAleatorio();
+            System.out.println("La banca saca ");
+            imprimirCarta(carta, palo);
+            puntosCarta = puntosCarta(carta);
+            puntosBanca = puntosBanca + puntosCarta;
+            System.out.println("Puntuacion banca es " + puntosBanca + " tu te plantaste a " + puntosJugador);
+        }while (bancaPideCarta(puntosJugador, puntosCarta));
+
+        if (ganaJugador(puntosJugador, puntosBanca)) {
+            System.out.println();
+        }
     }
 
     public static int numeroCartaAleatoria() {
         Random rd = new Random();
 
-        int numero = rd.nextInt(10) + 1;
+        int numero = rd.nextInt(1, 11);
 
         if (numero == 8) {
             numero = 10;
@@ -86,5 +113,17 @@ public class juegoCartas {
         } else {
             return false;
         }
+    }
+
+    public static int decision() {
+        Scanner sc = new Scanner(System.in);
+        char respuesta;
+
+        do {
+            System.out.println("Quieres seguier jugando? (s/n)");
+            respuesta = sc.next().charAt(0);
+        } while (respuesta != 's' && respuesta != 'n');
+
+        return respuesta;
     }
 }
