@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class exerciciA2_SolFuncions_alexvazquez{
+public class Funcions_alexvazquez{
 public static void main(String[] args) {
     
 
@@ -120,5 +120,6 @@ return false;
 
 
 }
+
 
 
