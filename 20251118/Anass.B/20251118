@@ -1,0 +1,52 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Capitansubasa {
+    public static void main(String[] args) {
+       
+    }
+public static String elegir_lado_jugador() {
+    Scanner sc = new Scanner(System.in);
+   char lado;
+   do {
+    System.out.println("Donde lanzas? (Left/Right/Center)");
+    lado = sc.next().charAt(0);
+   }while (lado != 'L' && lado != 'l' && lado != 'R' && lado != 'r' && lado != 'C' && lado != 'c');
+
+
+   if (lado == 'L' || lado == 'l') {
+    return "Left";
+   } else if (lado == 'R' || lado == 'r') {
+    return "Right";
+   } else return "Center";
+
+    
+}
+
+public static String elegir_lado_maquina(){
+Random rd = new Random();
+int lado_maq = rd.nextInt(1,4);
+
+ if (lado_maq == 1) {
+    return "Left";
+ } else if (lado_maq == 2) {
+    return "Right";
+ } else return "Center";
+
+}
+
+public static boolean hay_gol(String elegir_lado_jugador, String elegir_lado_maquina){
+if (elegir_lado_jugador == elegir_lado_maquina) {
+System.out.println("GOOOL");
+return true;
+} else  System.out.println("Paradón"); 
+return false;
+}
+public static void marcador(int goles_jugador, int goles_maq){
+System.out.println("************************");
+System.out.println("*      Jugador " + goles_jugador + "       *");
+System.out.println("*      Maquina " + goles_maq + "       *");
+System.out.println("************************");
+
+}
+}
