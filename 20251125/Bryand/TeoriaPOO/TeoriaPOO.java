@@ -1,25 +1,22 @@
 package TeoriaPOO;
 
-import Objetos.botella;
+import Objectos.Botella;
 
 public class TeoriaPOO {
+        public static void main (String[] args){
+            Botella bottle;
+            bottle = new Botella();
+            System.out.println("Capacidad botella " + bottle.getCapacidad());
+            System.out.println("ml liquido: " + bottle.getMlLiquido());
+            System.out.println("Tapon " + bottle.estaAbierta());
+            System.out.println("Intento poner 70");
+            bottle.setLiquido(70);
+            System.out.println("ml liquido: " + bottle.getMlLiquido());
 
-    public static void main(String[] args) {
+            System.out.println("Intento poner 10");
+            bottle.setLiquido(10);
+            System.out.println("ml liquido: " + bottle.getMlLiquido());
 
-        botella b = new botella();
-
-        System.out.println("Botella tapada:");
-        System.out.println("Intento verter: " + b.verter() + "ml");
-        System.out.println("Contenido actual: " + b.getContingut() + "ml");
-
-        b.abrirBotella();
-        System.out.println("Botella abierta:");
-        System.out.println("Intento verter: " + b.verter() + "ml");
-        System.out.println("Contenido actual: " + b.getContingut() + "ml");
-
-        System.out.println("Intento verter más de lo que queda:");
-        System.out.println("Intento verter 10ml: " + b.verter() + "ml");
-        System.out.println("Contenido actual: " + b.getContingut() + "ml");
+        }
     }
-}
 
