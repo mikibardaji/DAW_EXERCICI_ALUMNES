@@ -12,3 +12,5 @@ Ejercicio A2 – Persona Crea un programa con una clase llamada Persona que repr
 
 
 RECORDEU FICAR AL MISSATGE, EL NOM EXACTE DE LA CARPETA SINO, NO ES MARCARÀ.
+
+[CARPETA](CARPETA.png)
