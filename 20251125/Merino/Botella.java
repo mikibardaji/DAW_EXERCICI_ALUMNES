@@ -8,7 +8,7 @@ public class Botella {
     //los atributos pueden ser: //private /public
     //si no se especifica lo contrario, siempre son private
 
-    private int ml_liquido;
+    private int ml_liquido; 
     private int ml_capacidad;
     private boolean tapon;
     private String material;
@@ -24,7 +24,7 @@ public class Botella {
         ml_capacidad = 25;
         tapon = true;
         ml_liquido = 0;
-        material = "Cristal";
+        material = "CRistal";
     }
 
     //métodos
@@ -139,3 +139,4 @@ public class Botella {
     }
 
 }
+
