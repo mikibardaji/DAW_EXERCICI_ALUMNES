@@ -1,4 +1,4 @@
-package Objectes;
+package Objectos;
 
 public class Vaso {
     private int ml_liquido;
@@ -26,5 +26,6 @@ public class Vaso {
         return material;
     }
 }
+
 
 
