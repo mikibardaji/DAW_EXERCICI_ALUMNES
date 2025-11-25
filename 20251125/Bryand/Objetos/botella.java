@@ -1,4 +1,4 @@
-package Objectes;
+package Objectos;
 public class Botella {
 
     private int ml_liquido;
@@ -117,4 +117,5 @@ public class Botella {
         }
     }
     }
+
 
