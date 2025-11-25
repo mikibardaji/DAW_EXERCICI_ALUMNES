@@ -9,3 +9,6 @@ Ejercicio A2 – Persona Crea un programa con una clase llamada Persona que repr
 
       //cambiar o añadir metodos a vaso y botella
       //para el liquido sobrante al rellenar vuelva a la botella
+
+
+RECORDEU FICAR AL MISSATGE, EL NOM EXACTE DE LA CARPETA SINO, NO ES MARCARÀ.
