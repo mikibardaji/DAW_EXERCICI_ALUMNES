@@ -21,6 +21,7 @@ public class App {
 
 
         System.out.println();
+        
 
             System.out.println(" DNI de la segunda persona: ");
             a2.setDni(sc.nextLine());
@@ -34,6 +35,7 @@ public class App {
 
 
         System.out.println();
+        
 
             System.out.println("Información de la primera persona:");
             a1.imprime();
@@ -43,3 +45,4 @@ public class App {
         
     }
 }
+
