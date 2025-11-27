@@ -16,7 +16,7 @@ public class Mainpersona {
             p1.setNombre(sc.nextLine());
             System.out.print("  Apellido de la primera persona:  ");
             p1.setApellidos(sc.nextLine());
-            System.out.print("  Edad de la primera persona  ");
+            System.out.print("  Edad de la primera persona:  ");
             p1.setEdad(sc.nextInt());
             sc.nextLine();
 
@@ -44,6 +44,7 @@ public class Mainpersona {
         
     }
 }
+
 
 
 
