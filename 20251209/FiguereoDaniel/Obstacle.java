@@ -3,11 +3,11 @@ import java.util.Random;
 
 public class Obstacle {
     
-    public static final int MIN_BARRERA = 1;
-    public static final int MAX_BARRERA = 5;
+    public static final int minBarrera = 1;
+    public static final int maxBarrera = 5;
 
-    public static final int MIN_TREN = 5;
-    public static final int MAX_TREN = 10;
+    public static final int minTren = 5;
+    public static final int maxTren = 10;
     
     
     
@@ -34,10 +34,10 @@ public class Obstacle {
       
         if (rand.nextBoolean()) {
             tipus = "barrera";
-            dificultat = rand.nextInt(MAX_BARRERA - MIN_BARRERA + 1) + MIN_BARRERA;
+            dificultat = rand.nextInt(maxBarrera - minBarrera + 1) + minBarrera;
         } else {
             tipus = "tren";
-            dificultat = rand.nextInt(MAX_TREN - MIN_TREN + 1) + MIN_TREN;
+            dificultat = rand.nextInt(maxTren - minTren + 1) + minTren;
         }
         
         
@@ -54,7 +54,7 @@ public class Obstacle {
      
          public static Obstacle obstacleMaxim() {
      
-        return new Obstacle("tren", MAX_TREN);
+        return new Obstacle("tren", maxTren);
     }
      
      
@@ -62,3 +62,4 @@ public class Obstacle {
      
     
 }
+
