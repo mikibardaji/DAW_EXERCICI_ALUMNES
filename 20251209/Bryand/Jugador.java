@@ -59,3 +59,4 @@ public class Jugador {
                            " dificultat " + ob.getDificultat());
     }
 }
+
