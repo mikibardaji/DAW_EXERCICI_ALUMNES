@@ -50,3 +50,4 @@ public class Obstaculo {
         this.dificultad = dificultad;
     }
 }
+ 
