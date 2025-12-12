@@ -3,7 +3,7 @@
 Enunciat de classes i Herencia aplicat al futbol.
 
 
-Implementar sols, el que fica a les 4 primeres diapositives (inclos el títol).
+Implementar sols, el que fica a les 4 primeres diapositives (inclos el títol), a classe implementarem més coses.
 
  - [Link Presentació](https://docs.google.com/presentation/d/1Lg3bwhEfeECo-8NQilX_OPNP1RwghX0W18lhQdMr3IE/edit?usp=sharing)
 
