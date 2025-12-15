@@ -1,4 +1,4 @@
-
+// Alex gey
 
 import objetos.Obstacle;
 import objetos.Moneda;
@@ -81,3 +81,4 @@ public void jugar() {
   
     
 }
+
