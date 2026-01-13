@@ -12,9 +12,12 @@ public class agua extends Pokemon {
     public void aplicarDany(int dany) {
         if (corassa > 0) {
             corassa--;
-        } else {
+        } 
+        
+        else {
             rebreAtac(dany);
         }
     }
 }
+
 
