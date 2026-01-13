@@ -9,7 +9,7 @@ public class veri extends Pokemon {
         this.defensa = false;
     }
 
-    public void aplicarDanyo(int dany) {
+    public void aplicarDany(int dany) {
         if (LP < 15) {
             defensa = true;
         }
@@ -21,3 +21,4 @@ public class veri extends Pokemon {
         rebreAtac(dany);
     }
 }
+
