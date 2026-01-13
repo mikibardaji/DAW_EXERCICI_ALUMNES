@@ -23,7 +23,7 @@ public class PokemonAigua extends Pokemon {
     
     @Override
     public void recibirImpacto(Pokemon atacante) {
-        int damage = atacante.atacar();
+        double damage = atacante.atacar();
 
         if (corassa > 0) {
             System.out.println(nomPokemon + " bloqueja el dany, Corassa restant: " + (corassa-1));
