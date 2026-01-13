@@ -28,14 +28,7 @@ public class PokemonAigua extends Pokemon {
         if (corassa > 0) {
             System.out.println(nomPokemon + " bloqueja el dany, Corassa restant: " + (corassa-1));
             corassa--;
-            mostrarDespuesImpacto(); // Mostrar estado después de bloquear
-            return;
-        }
-
-        aplicarDany(damage, atacante);
-        mostrarDespuesImpacto();
-    }
-    if (Pokemon instanceof PokemonVeri)
+             if (Pokemon instanceof PokemonVeri)
         {
             valor = valor*0,75;
         }
@@ -44,4 +37,12 @@ public class PokemonAigua extends Pokemon {
         {
             vida=false
         }
+            mostrarDespuesImpacto(); // Mostrar estado después de bloquear
+            return;
+        }
+
+        aplicarDany(damage, atacante);
+        mostrarDespuesImpacto();
+    }
+   
 }
