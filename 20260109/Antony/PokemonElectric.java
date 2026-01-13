@@ -39,4 +39,13 @@ public final class PokemonElectric extends Pokemon {
         aplicarDany(dany, atacante);
         mostrarDespuesImpacto();
     }
+    if (Pokemon instanceof PokemonElectric)
+        {
+            valor = valor*0,75;
+        }
+        LP -= valor;
+        if (LP<=0)
+        {
+            vida=false
+        }
 }
