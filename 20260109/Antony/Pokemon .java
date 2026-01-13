@@ -5,7 +5,6 @@ public abstract class Pokemon implements AccionesCombate {
     protected final String nomPokemon;
     protected int lifePoint;
     protected boolean viu;
-    protected static final Random rand = new Random();
     
     // Constructor principal (usado por tus clases)
     public Pokemon(int lifePoint, boolean viu, String nomPokemon) {
@@ -16,17 +15,25 @@ public abstract class Pokemon implements AccionesCombate {
     
     // Constructor por defecto (Pikachu)
     public Pokemon() {
-        this(0, true, "Pikachu");
+            nomPokemon "Pikachu";
+            viu true;
     }
     
     // Getters
-    public String getNomPokemon() { return nomPokemon; }
-    public int getLifePoint() { return lifePoint; }
-    public boolean isViu() { return viu; }
+    public String getNomPokemon() { 
+        return nomPokemon; 
+    }
+    public int getLifePoint() { 
+        return lifePoint; 
+    }
+    public boolean isViu() { 
+        return viu; 
+    }
     
     // Método atacar() para compatibilidad con tus clases
     public int atacar() {
-        int fuerza = rand.nextInt(11);
+        Random rd = new Random();
+        int fuerza = rd.nextInt(11);
         System.out.println(nomPokemon + " ataca con " + fuerza);
         return fuerza;
     }
@@ -88,10 +95,15 @@ public abstract class Pokemon implements AccionesCombate {
     // Método equals
     @Override
     public boolean equals(Object obj) {
-        if (obj == null) return false;
-        if (this == obj) return true;
-        if (!(obj instanceof Pokemon)) return false;
-        
+        if (obj == null) {
+            return false;
+        }
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Pokemon)) {
+            return false;
+        }
         Pokemon other = (Pokemon) obj;
         return this.nomPokemon.equals(other.nomPokemon);
     }
