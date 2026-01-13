@@ -36,18 +36,27 @@ public abstract class Pokemon {
 
         int dany = atacante.atacar();
 
-        if (atacante instanceof agua && this instanceof electrico ||
-            atacante instanceof electrico && this instanceof veri ||
-            atacante instanceof veri && this instanceof agua) {
-
+        if (atacante instanceof agua && this instanceof electrico){
+            dany = (int)(dany * 0.75);
+        }
+            
+        if  (atacante instanceof electrico && this instanceof veri) {
+            dany = (int)(dany * 0.75);
+        }
+        
+        if  (atacante instanceof veri && this instanceof agua) {
             dany = (int)(dany * 0.75);
         }
 
         if (this instanceof agua) {
             ((agua)this).aplicarDanyo(dany);
-        } else if (this instanceof veri) {
+        } 
+        
+        else if (this instanceof veri) {
             ((veri)this).aplicarDanyo(dany);
-        } else {
+        } 
+        
+        else {
             rebreAtac(dany);
         }
 
@@ -78,3 +87,4 @@ public abstract class Pokemon {
         return this.nomPokemon.equals(other.nomPokemon);
     }
 }
+
