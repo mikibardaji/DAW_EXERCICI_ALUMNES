@@ -9,7 +9,7 @@ public class agua extends Pokemon {
         this.corassa = 3;
     }
 
-    public void aplicarDanyo(int dany) {
+    public void aplicarDany(int dany) {
         if (corassa > 0) {
             corassa--;
         } else {
@@ -17,3 +17,4 @@ public class agua extends Pokemon {
         }
     }
 }
+
