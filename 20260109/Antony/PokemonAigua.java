@@ -35,4 +35,13 @@ public class PokemonAigua extends Pokemon {
         aplicarDany(damage, atacante);
         mostrarDespuesImpacto();
     }
+    if (Pokemon instanceof PokemonVeri)
+        {
+            valor = valor*0,75;
+        }
+        LP -= valor;
+        if (LP<=0)
+        {
+            vida=false
+        }
 }
