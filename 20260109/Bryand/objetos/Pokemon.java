@@ -71,15 +71,8 @@ public abstract class Pokemon {
         }
     }
 
-    private void mostrarEstadoPokemon() {
-        String estat = (LP > 0) ? "viu" : "mort";
-        System.out.print(nomPokemon + " " + LP + " LP " + estat + " ");
-        for (int i = 0; i < LP; i++) {
-            System.out.print("=");
-        }
-        System.out.println();
-    }
-
+   // private void mostrarEstadoPokemon() {
+    
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Pokemon)) return false;
@@ -87,4 +80,5 @@ public abstract class Pokemon {
         return this.nomPokemon.equals(other.nomPokemon);
     }
 }
+
 
