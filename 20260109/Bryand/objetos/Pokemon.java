@@ -47,14 +47,6 @@ public abstract class Pokemon {
         if  (atacante instanceof veri && this instanceof agua) {
             dany = (int)(dany * 0.75);
         }
-
-        if (this instanceof agua) {
-            ((agua)this).aplicarDanyo(dany);
-        } 
-        
-        else if (this instanceof veri) {
-            ((veri)this).aplicarDanyo(dany);
-        } 
         
         else {
             rebreAtac(dany);
@@ -80,5 +72,6 @@ public abstract class Pokemon {
         return this.nomPokemon.equals(other.nomPokemon);
     }
 }
+
 
 
