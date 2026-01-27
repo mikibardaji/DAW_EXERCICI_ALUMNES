@@ -2,8 +2,7 @@
 
 Per casa, mira els primers minuts d'aquest concurs, perque el dijous codificarem [aquest joc](https://www.telecinco.es/television/a-la-carta/20250728/alla-tu-programa-completo-video_18_016231909.html). Sol cal mirar, fins que ha obert 3 o 4 caixes i truca la banca al telefon per fer una oferta.
 
-Pujar un fitxer txtm amb els metodes que  creus que s'haurien de codificar, per poder simular el concurs.
-
+Pujar un fitxer txt amb els metodes que  creus que s'haurien de codificar, per poder simular el concurs.
 
 
 un exemple podria ser el següent
