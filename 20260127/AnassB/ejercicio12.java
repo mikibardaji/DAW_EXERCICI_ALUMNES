@@ -6,7 +6,7 @@ public class ejercicio12 {
         int numerosEnteros [];
         numerosEnteros = new int[10];
 
-        
+    
         String opcion;
         
             
