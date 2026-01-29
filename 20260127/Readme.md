@@ -22,7 +22,7 @@ o si queréis (SI/NO), o si queréis (Sí-1, No-0)? La que sepáis resolver.
 
 # Feina per casa no de codificació 
 
-Per casa, mira els primers minuts d'aquest concurs, perque el dijous codificarem [aquest joc](https://www.telecinco.es/television/a-la-carta/20250728/alla-tu-programa-completo-video_18_016231909.html). Sol cal mirar, fins que ha obert 3 o 4 caixes i truca la banca al telefon per fer una oferta.
+Per casa, mira els primers minuts d'aquest concurs, perque el dijous codificarem [aquest joc](https://www.mediasetinfinity.es/programas-tv/alla-tu/2026/episodios/programa-57-40_018098474/player/). Sol cal mirar, fins que ha obert 3 o 4 caixes i truca la banca al telefon per fer una oferta.
 
 Pujar un fitxer txt amb els metodes que  creus que s'haurien de codificar, per poder simular el concurs.
 
