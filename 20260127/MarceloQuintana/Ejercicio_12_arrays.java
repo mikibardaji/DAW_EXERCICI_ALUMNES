@@ -26,7 +26,7 @@ public class Ejercicio_12_arrays {
             }
         } while (opcion != 'c');
 
-        sc.close();
+
     }
 
  
