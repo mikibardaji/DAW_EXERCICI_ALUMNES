@@ -1,0 +1,45 @@
+- inicialitzarCaixes()
+Crea les caixes del joc i assigna a cada una un premi aleatori (imports de diners) sense repetir.
+
+- mostrarCaixesDisponibles()
+Mostra per pantalla quines caixes encara no s’han obert.
+
+- escollirCaixaJugador()
+Permet al jugador escollir la seva caixa inicial, que es guardarà fins al final (no s’obre).
+
+- obrirCaixa(int numeroCaixa)
+Obre una caixa escollida pel jugador i mostra el premi que hi havia dins.
+Elimina aquesta caixa de les disponibles.
+
+- calcularOfertaBanca()
+Calcula l’oferta del banc en funció dels premis que encara queden tancats.
+(Pot ser la mitjana, un percentatge de la mitjana, etc.)
+
+- trucadaBanca()
+Simula la trucada del banc i mostra l’oferta al jugador.
+
+- acceptarOferta()
+Retorna true si el jugador decideix acceptar l’oferta del banc.
+
+- rebutjarOferta()
+Permet continuar el joc obrint més caixes.
+
+- quedenPoquesCaixes()
+Comprova si s’ha arribat a un punt del joc on només queden poques caixes (per exemple 2).
+
+- intercanviarCaixaFinal()
+Quan només queden dues caixes (la del jugador i una altra), permet decidir si vol canviar-la o no.
+
+- obrirCaixaFinal()
+Obre la caixa final del jugador i mostra el premi real que ha guanyat.
+
+- mostrarPremisRestants()
+Mostra la llista de premis que encara no han sortit (els que queden en joc).
+
+- tornRonda()
+Controla quantes caixes s’han d’obrir abans de la següent trucada del banc.
+
+- fiDelJoc()
+Mostra un resum final:
+– Si ha acceptat oferta → quant ha guanyat
+– Si ha anat fins al final → quant tenia a la seva caixa
