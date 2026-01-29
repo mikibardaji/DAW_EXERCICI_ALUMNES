@@ -1,0 +1,11 @@
+-> Preparar 22 cajas con arrays
+elegirCaja()
+	El consursante elige una caja del 1 al 22
+abrirCaja()
+	Contendría un random para el premio que hay dentro de entre 0,50€ y 250.000€
+llamadaBanquera()
+	El concursante elige si se queda con la oferta o no
+abrirCajaPropia()
+	Comprobar qué hay en la caja del concursante
+revelarCajas()
+	Revelar qué hay en las cajas restantes
