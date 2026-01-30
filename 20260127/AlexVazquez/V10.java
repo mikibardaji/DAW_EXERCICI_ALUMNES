@@ -1,19 +1,15 @@
-Joc Alla Tu 
+Joc Alla Tu
 
-Funcionalitats que s'haurien de programar 
+Funcionalitats que s’han de programar
 
-inicialitzarCaixes: crear amb arrays els 22 caixes amb el premis corresponents
+-inicialitzarCaixes: crear mitjançant arrays les 22 caixes del joc amb els seus premis assignats
 
--EscollirCaixa : El usuari te que escollir un numero del 1 al 22
+-EscollirCaixa: l’usuari ha d’escollir un número del 1 al 22
 
--mostrarCaixa : mostrado el valor de la caixa
+-mostrarCaixa: mostrar per pantalla el valor de la caixa seleccionada
 
+-TrucadaBanquer: el banquer proposa una oferta econòmica i l’usuari decideix si l’accepta o la rebutja
 
--TrucadaBanquer: El banquer ofereix un valor y el usuari accepta o tritura
+-ComprovarCaixa: segons la caixa escollida, el premi pot anar de 0,50 € fins a 250.000 €
 
-
-ComprobarCaixa: Depenent de la caixa te un valor de 0.50 fins 250.000 euros 
-
-
-
-finalitzarJoc : mostrar el resultat final del joc 
+-finalitzarJoc: mostrar el resultat final del joc
