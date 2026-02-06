@@ -47,10 +47,7 @@ public class AllaTu {
         }
 
         mostrarResultadoFinal(aceptarOferta, oferta, miCaja, cajas);
-        sc.close();
     }
-
-    /* ---------------- MÉTODOS ---------------- */
 
     private static Caja[] repartirPremios(int[] premios) {
         Caja[] cajas = new Caja[premios.length];
@@ -127,4 +124,3 @@ public class AllaTu {
         }
     }
 }
-
