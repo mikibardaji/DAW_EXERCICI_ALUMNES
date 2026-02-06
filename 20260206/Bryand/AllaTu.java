@@ -8,9 +8,7 @@ public class AllaTu {
     public static void main(String[] args) {
 
         int[] premios = {
-            1, 5, 10, 20, 30, 40, 50, 60,
-            100, 400, 500, 800, 1000,
-            2000, 5000, 10000, 50000
+            1, 5, 10, 20, 30, 40, 50, 60, 100, 400, 500, 800, 1000, 2000, 5000, 10000, 50000
         };
 
         Caja[] cajas = repartirPremios(premios);
@@ -27,9 +25,9 @@ public class AllaTu {
             do {
                 cajaElegida = pedirCaja("Elige una caja para abrir: ", cajas.length);
                 if (cajaElegida == miCaja) {
-                    System.out.println("❌ No puedes abrir tu propia caja.");
+                    System.out.println("No puedes abrir tu propia caja.");
                 } else if (cajas[cajaElegida].isAbierta()) {
-                    System.out.println("❌ Esa caja ya está abierta.");
+                    System.out.println("Esa caja ya está abierta.");
                 }
             } while (cajaElegida == miCaja || cajas[cajaElegida].isAbierta());
 
@@ -43,7 +41,7 @@ public class AllaTu {
             if (ronda == 3) {
                 ronda = 0;
                 oferta = calcularOferta(cajas);
-                System.out.println("📞 Banquero: Te ofrezco " + oferta + "€");
+                System.out.println("Banquero: Te ofrezco " + oferta + "€");
                 aceptarOferta = decidir();
             }
         }
@@ -129,3 +127,4 @@ public class AllaTu {
         }
     }
 }
+
