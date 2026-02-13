@@ -36,3 +36,4 @@ public class Gato {
         return "Nombre: " + nombre + " Edad: " + edad;
     }
 }
+
