@@ -1,56 +1,37 @@
-import java.util.Scanner;
+package Objetos;
+public class Gato {
 
-public class TeoriaArrays {
+    private String nombre;
+    private int edad;
 
-    public static void main(String[] args) {
-
-        int[] notasModulo485 = new int[6];
-
-        ponerNotas(notasModulo485);
-        mostrarArray(notasModulo485);
-        calcularMedia(notasModulo485);
-        detectarCuantasRasSuspendidas(notasModulo485);
+    public Gato(int edad, String nombre) throws Exception {
+        setEdad(edad);
+        setNombre(nombre);
     }
 
-    /* Pregunta las notas al usuario y las introduce en el array */
-    private static void ponerNotas(int[] notasModulo485) {
-        Scanner sc = new Scanner(System.in);
-
-        for (int i = 0; i < notasModulo485.length; i++) {
-            System.out.print("Pon la nota " + (i + 1) + ": ");
-            notasModulo485[i] = sc.nextInt();
-        }
+    public String getNombre() {
+        return nombre;
     }
 
-    /* Muestra el contenido del array */
-    private static void mostrarArray(int[] notas) {
-        for (int i = 0; i < notas.length; i++) {
-            System.out.println("En la posición " + i + " tienes un " + notas[i]);
+    public void setNombre(String nombre) throws Exception {
+        if (nombre == null || nombre.length() < 3) {
+            throw new Exception("El nombre del gato debe tener al menos 3 caracteres");
         }
+        this.nombre = nombre;
     }
 
-    /* Calcula y muestra la media */
-    private static void calcularMedia(int[] notas) {
-        int notasAcum = 0;
-
-        for (int i = 0; i < notas.length; i++) {
-            notasAcum += notas[i];
-        }
-
-        double media = (double) notasAcum / notas.length;
-        System.out.println("La media es: " + media);
+    public int getEdad() {
+        return edad;
     }
 
-    /* Detecta cuántas asignaturas están suspendidas */
-    private static void detectarCuantasRasSuspendidas(int[] notas) {
-        int suspendidas = 0;
-
-        for (int i = 0; i < notas.length; i++) {
-            if (notas[i] < 5) {
-                suspendidas++;
-            }
+    public void setEdad(int edad) throws Exception {
+        if (edad < 0) {
+            throw new Exception("La edad del gato no puede ser negativa");
         }
+        this.edad = edad;
+    }
 
-        System.out.println("Tienes " + suspendidas + " asignaturas suspendidas");
+    public String imprimir() {
+        return "Nombre: " + nombre + " Edad: " + edad;
     }
 }
