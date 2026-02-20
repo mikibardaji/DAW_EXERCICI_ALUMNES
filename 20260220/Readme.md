@@ -1,7 +1,7 @@
 # Complimentar el codi a les linies de comentari que ficava TO DO
 
 ## Recordeu que la classe Jugadors,no esta en aquest codi, sino que es troba al Repositori DAW_M0485_2526, perque sino no us funcionarà.
-Recordeu que al missatge del commit ha de tenir exactament el nom de la carpeta , en aquest cas  20260220
+Recordeu que al missatge del commit ha de tenir exactament el nom de la carpeta , en aquest cas  **20260220**
 
 ```java
 /*
