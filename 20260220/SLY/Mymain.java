@@ -48,10 +48,11 @@ public class Mymain {
         
         
         //borrar el jugador que tenga el dorsal que hayas escrito en 2 posicion s
-         System.out.println("Borro a Neymar " + football.remove("Neymar"));
+         System.out.println("Borro a Neymar " + football.remove(j1));
         
         
         
     }
 
 }
+
