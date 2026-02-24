@@ -4,7 +4,6 @@ import java.util.List;
 
 public class TeoriaList {
     public static void main(String[] args) throws Exception {
-        // Para que el código se ejecute, debes llamar a los métodos aquí:
         clubFutbol();
         crearAgenda();
     }
@@ -21,33 +20,33 @@ public class TeoriaList {
             Jugadors j3 = new Jugadors(2, "Balde");
             Jugadors j4 = new Jugadors(7, "Cristiano");
 
-            for (Jugadors jugadors : club) {
-                System.out.println(jugadors.getDorsal()
-                + " - " + jugadors.getNom());
-            }
-            
             club.add(j1);
             club.add(j2);
             club.add(j3);
             club.add(j4);
 
+            for (Jugadors jugadors : club) {
+                System.out.println(jugadors.getDorsal()
+                + " - " + jugadors.getNom());
+            }
+            
         //fore listaor
         System.out.println("Jugadores en plantilla: "
                + club.size());
         //me pregunteis si existe el
         //segundo jugador que has insertado
         System.out.println("Dentro de la plantilla esta Cristiano? " 
-                + club.contains(new Jugadors(7, "Cristiano")));
+                + club.contains(j4));
         //borrad el jugador que esta en la posicion 3
         System.out.println("Borro al tercer jugador " 
                 + club.remove(2));
         //borrad el jugador que tenga el dorsal que hayas
         //escrito en segunda posicion.
         System.out.println("Borro al jugador del dorsal 10 (en segunda posicion)"
-                + club.remove(10));
+                + club.remove(0));
         /* System.out.println("Borro al jugador de segunda posición")
                 + club.remove(1); */
-
+        
         //Solo seran iguales si el dorsal y el nombre son iguales
         if (j2.equals(new Jugadors(10, "Messi"))) {
             System.out.println("Son iguales");
@@ -57,11 +56,8 @@ public class TeoriaList {
             System.out.println("No son iguales");
         }
                 
-        
         //crearAgenda();
         }
-
-    
 
         private static void crearAgenda() {
         List<String> agenda; //para poder aceptar polimorfismo
@@ -125,6 +121,4 @@ public class TeoriaList {
                     System.out.println(nombre);
                     }
     }
-
 }
-
