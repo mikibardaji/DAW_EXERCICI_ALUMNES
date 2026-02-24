@@ -38,11 +38,13 @@ public class TeoriaList {
                 + club.contains(new Jugadors(7, "Cristiano")));
         //borrad el jugador que esta en la posicion 3
         System.out.println("Borro al tercer jugador " 
-                + club.remove(3));
+                + club.remove(2));
         //borrad el jugador que tenga el dorsal que hayas
         //escrito en segunda posicion.
-        System.out.println("Borro al jugador del dorsal 10"
+        System.out.println("Borro al jugador del dorsal 10 (en segunda posicion)"
                 + club.remove(10));
+        /* System.out.println("Borro al jugador de segunda posición")
+                + club.remove(1); */
         
         
         //crearAgenda();
