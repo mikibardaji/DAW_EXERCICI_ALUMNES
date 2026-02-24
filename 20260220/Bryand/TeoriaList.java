@@ -4,7 +4,9 @@ import java.util.List;
 
 public class TeoriaList {
     public static void main(String[] args) throws Exception {
-
+        // Para que el código se ejecute, debes llamar a los métodos aquí:
+        clubFutbol();
+        crearAgenda();
     }
         //creame un arraup ClubFutbol
         private static void clubFutbol() {
@@ -45,7 +47,16 @@ public class TeoriaList {
                 + club.remove(10));
         /* System.out.println("Borro al jugador de segunda posición")
                 + club.remove(1); */
+
+        //Solo seran iguales si el dorsal y el nombre son iguales
+        if (j2.equals(new Jugadors(10, "Messi"))) {
+            System.out.println("Son iguales");
+        } 
         
+        else {
+            System.out.println("No son iguales");
+        }
+                
         
         //crearAgenda();
         }
