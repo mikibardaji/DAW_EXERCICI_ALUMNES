@@ -8,7 +8,7 @@ class Pelicula {
         this.id = id;
         this.nom = nom;
         this.any = any;
-        // Validació del gènere segons el teu requeriment
+        
         if (!genere.equals("Ciència-Ficció") 
             && !genere.equals("Bèl·lica") 
             && !genere.equals("Terror")) {
@@ -45,3 +45,4 @@ class Pelicula {
                " | Any: " + any;
     }
 }
+
