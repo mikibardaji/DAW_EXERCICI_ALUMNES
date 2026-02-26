@@ -210,8 +210,9 @@ public class CatalogoPeliculas {
 
         for (Pelicula p : cataleg) {
             System.out.println(p);
-        }
+        } 
 
         System.out.println("\nNombre pel·lícules a ProvenFilm: " + cataleg.size());
     }
+
 }
