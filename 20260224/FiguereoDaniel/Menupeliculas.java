@@ -154,6 +154,6 @@ public class Menupeliculas {
 
         } while (opcion != 0);
 
-        sc.close();
     }
 }
+
