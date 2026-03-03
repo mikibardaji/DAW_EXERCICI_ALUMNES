@@ -22,7 +22,7 @@ La classe ha de residir en un paquet d'utilitats i ha de tenir els següents com
 | **Constructor** | Ha de rebre el **títol** del menú com a paràmetre i inicialitzar la llista d'opcions. |
 | **`anyadirOpcio(String text)`** | Afegeix una nova línia de text a la llista d'opcions. |
 | **`mostrarMenu()`** | Imprimeix per pantalla el títol i totes les opcions **numerades** (0, 1, 2...). |
-| **`llegirOpcio()`** | Gestiona l'entrada de l'usuari. Ha d'incloure un bloc `try-catch` per capturar errors si l'usuari introdueix lletres en lloc de números. |
+| **`llegirOpcio()`** | Gestiona l'entrada de l'usuari. Ha d'incloure un bloc `try-catch` per capturar errors si l'usuari introdueix lletres en lloc de números. Cridarà al metode validarOpcio, i si no passa el metode demanarà que es torni a introduir.|
 | **`validarOpcio(int opcio)`** | Comprova si el número introduït està dins del rang de la llista (entre 0 i la mida de la llista). |
 
 ---
