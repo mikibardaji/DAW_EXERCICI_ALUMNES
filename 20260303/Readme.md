@@ -13,18 +13,18 @@ La classe ha de residir en un paquet d'utilitats i ha de tenir els següents com
 ### 1. Atributs (Estat)
 * **`String titol`**: Per emmagatzemar el títol del menú (Ex: `"MENÚ GESTIÓ PEL·LÍCULES"`).
 * **`List<String> opcions`**: Una llista de cadenes de text per guardar els textos de cada opció disponible.
-
+* **`int opcioSalida`**: Contindrà el numero de menú que sigui Sortir (cada menú podrà ser diferent)
+ 
 
 ### 2. Mètodes a implementar (Comportament)
 
 | Mètode | Descripció |
 | :--- | :--- |
-| **Constructor** | Ha de rebre el **títol** del menú com a paràmetre i inicialitzar la llista d'opcions. |
+| **Constructor** | Ha de rebre el **títol** del menú com a paràmetre i inicialitzar la llista d'opcions. El camp Opció Salida es deixa a 0|
 | **`anyadirOpcio(String text)`** | Afegeix una nova línia de text a la llista d'opcions. No la demana dins, la rep d'entrada, pero hauria de comprovar que no la té afegida ja, per no insertar-la dos cops. |
+| **Setter i Getter de opcioSalida** | El setter rep el numero que volem que sigui sortir, getter retorna el camp|
 | **`mostrarMenu()`** | Imprimeix per pantalla el títol i totes les opcions **numerades** (0, 1, 2...). |
-| **`llegirOpcio()`** | Gestiona l'entrada de l'usuari. Ha d'incloure un bloc `try-catch` per capturar errors si l'usuari introdueix lletres en lloc de números. Cridarà al metode validarOpcio, i si no passa el metode demanarà que es torni a introduir.|
-| **`validarOpcio(int opcio)`** | Comprova si el número introduït està dins del rang de la llista (entre 0 i la mida de la llista). |
-
+| **`llegirOpcioValida()`** | Gestiona l'entrada de l'usuari. Ha d'incloure un bloc `try-catch` per capturar errors si l'usuari introdueix lletres en lloc de números, si passa aixo apart d'avisar deixarem la opció com  si hagues marcat la opció de sortida. Comprova si el número introduït està dins del rang de la llista (entre 0 i la mida de la llista).|
 ---
 
 ## Consells per a la implementació
