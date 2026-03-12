@@ -56,19 +56,20 @@ public class MenuConsola {
         try {
             System.out.print("Escull una opció: ");
             opcio = sc.nextInt();
-            sc.nextLine(); // neteja buffer
+            sc.nextLine(); 
 
             if (opcio < 0 || opcio >= opcions.size()) {
-                System.out.println("Opcio fora de rang. Sortint del menú...");
+                System.out.println("Opcio fora de rang. Sortint del menu.");
                 return opcionSortida;
             }
 
         } catch (Exception e) {
-            System.out.println("⚠ Entrada no vàlida. Sortint del menú...");
-            sc.nextLine(); // neteja buffer
+            System.out.println("Entrada no valida. Sortint del menu");
+            sc.nextLine(); 
             return opcionSortida;
         }
 
         return opcio;
     }
 }
+
