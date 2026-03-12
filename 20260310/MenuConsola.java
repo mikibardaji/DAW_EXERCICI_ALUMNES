@@ -1,0 +1,74 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package Modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Jeremy
+ */
+public class MenuConsola {
+
+  private String titol ;
+  private List<String> opcions ;
+  private int opcionSortida;
+  
+   Scanner sc = new Scanner(System.in);
+
+    public MenuConsola(String titol) {
+        this.titol = titol;
+        this.opcions = new ArrayList<>();
+        this.opcionSortida = opcionSortida;
+    }
+    
+        public void anyadirOpcio(String text) {
+        if (!opcions.contains(text)) {
+            opcions.add(text);
+        } else {
+            System.out.println(" Aquesta opcio ja existeix al menu.");
+        }
+    }
+
+    public int getOpcionSortida() {
+        return opcionSortida;
+    }
+
+    public void setOpcionSortida(int opcionSortida) {
+        this.opcionSortida = opcionSortida;
+    }
+   
+   public void mostrarMenu() {
+        System.out.println("\n==== " + titol + " ====");
+
+        for (int i = 0; i < opcions.size(); i++) {
+            System.out.println(i + " - " + opcions.get(i));
+        }
+    }
+  
+   public int llegirOpcioValida() {
+        int opcio;
+
+        try {
+            System.out.print("Escull una opció: ");
+            opcio = sc.nextInt();
+            sc.nextLine(); // neteja buffer
+
+            if (opcio < 0 || opcio >= opcions.size()) {
+                System.out.println("Opcio fora de rang. Sortint del menú...");
+                return opcionSortida;
+            }
+
+        } catch (Exception e) {
+            System.out.println("⚠ Entrada no vàlida. Sortint del menú...");
+            sc.nextLine(); // neteja buffer
+            return opcionSortida;
+        }
+
+        return opcio;
+    }
+}
