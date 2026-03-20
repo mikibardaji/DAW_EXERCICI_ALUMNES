@@ -21,7 +21,7 @@ public class FestivalBCNMVC {
     menu.anyadirOpcion("Llistar nombres de todos aistentes");
     menu.anyadirOpcion("Cancelar entrada");
     menu.anyadirOpcion("Calcular edad media");
-    menu.anyadirOpcion("SALIR");
+    menu.anyadirOpcion("Salir");
     
     menu.setOpcionSalida(5);
     
