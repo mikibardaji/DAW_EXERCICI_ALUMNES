@@ -4,6 +4,8 @@
  */
 package festivalburbujas;
 
+import java.util.Collection;
+import java.util.List;
 import java.util.Scanner;
 
 import utilidades.MenuConsola;
@@ -46,11 +48,11 @@ public class FestivalBurbujasMVC {
                     break;
                 case 1:
                     System.out.println("Has seleccionat: Buscar datos entrada");
-                    
+                    //pedir codigo clave, hacer un get con if else
                     break;
                 case 2:
                     System.out.println("Has seleccionat: Listar nombres asistentes");
-                    
+                    listarPorNombre(festi);
                     break;
                 case 3:
                     System.out.println("Has seleccionat: Cancelar entrada");
@@ -58,8 +60,9 @@ public class FestivalBurbujasMVC {
                     break;
                 case 4:
                     System.out.println("Has seleccionat: Calcular edat media");
-                    
+                    calcularEdatMedia(festi);
                     break;
+                
                 case 5:
                     System.out.println("Has seleccionat: SALIR");
                     
@@ -75,6 +78,39 @@ public class FestivalBurbujasMVC {
     
     }
 
+    private void calcularEdatMedia(FestivalRepository festi) {
+        double resultado = festi.calcularEdatMitjana(); 
+
+        
+    }
+
+    private void listarPorNombre(FestivalRepository festi) {
+    
+    Collection<Assistent> todos = festi.obtenirLlista();
+
+    System.out.println("Nombres encontrados -> " + todos.size());
+    for (Assistent assi : todos) {
+        System.out.println(assi.getNom());
+    }
+
+
+    }
+
+    private void listarEdadMayor(FestivalRepository festi) {
+    
+    List<Assistent> todos = festi.obtenirLlistaMayores();
+
+    System.out.println("Nombres encontrados -> " + todos.size());
+    if (todos.size()==0) {
+        System.out.println("No se han encontrado mayores de edad");
+    } else{
+    for (Assistent assi : todos) {
+        System.out.println(assi.getNom());
+    }
+    }
+
+    }
+
     private void registrarAssistent(FestivalRepository festi) {
     Scanner sc = new Scanner(System.in);
     
@@ -88,9 +124,18 @@ public class FestivalBurbujasMVC {
     int edat = sc.nextInt();
     sc.nextLine();
 
+    Assistent alta = new Assistent(codigoTicket, nombre, edat);
+
+    boolean resultado = festi.registrarAssistent(alta);
     
-    
+    if(resultado){
+         System.out.println("Entrada registrada");
+    } else System.out.println("Entrada existente");
+        
+
     }
+
+
     
     
 }
