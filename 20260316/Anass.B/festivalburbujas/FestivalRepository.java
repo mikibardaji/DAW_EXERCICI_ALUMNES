@@ -4,8 +4,10 @@
  */
 package festivalburbujas;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -34,6 +36,20 @@ public Collection<Assistent> obtenirLlista(){
 return festi.values();
 }
 
+public List<Assistent> obtenirLlistaMayores(){
+
+  List<Assistent> lii = new ArrayList<>();
+  
+  for (Map.Entry<String, Assistent> entrada : festi.entrySet()) {
+    Assistent valor = entrada.getValue();
+    if (valor.getEdat()>=18) {
+        lii.add(valor);
+    }     
+} 
+return lii;
+
+}
+
 public boolean cancelarEntrada(String codi){
     festi.remove(codi);
 
@@ -48,14 +64,26 @@ public boolean cancelarEntrada(String codi){
 public double calcularEdatMitjana(){
     double suma = 0;
 
-    for (Assistent a : festi.values()) {
+    for (Assistent a : festi.values()) { //el values devuelve una colection <Assitent>
         suma += a.getEdat();
     }
 
-    return suma / festi.size(); 
+    return (double) suma / festi.size(); 
 
 }
 
+public double calcularEdatMitjanaDos(){
+    double suma = 0;
+//colection <Assitent>
+    for (Map.Entry<String, Assistent> entrada : festi.entrySet()) { 
+        Assistent a = entrada.getValue();
+        
+        suma += a.getEdat();
+    }
+
+    return (double) suma / festi.size(); 
+
+}
 
 
 }
