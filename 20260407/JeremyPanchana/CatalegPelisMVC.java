@@ -45,33 +45,33 @@ public class CatalegPelisMVC {
             switch (opcio) {
                 
                 case 2:
-                    System.out.println("Has seleccionat: Afegir Pel韈ula");
-                    // TODO: Implementar afegir pel穕韈ula
+                    System.out.println("Has seleccionat: Afegir Pel铆cula");
+                    // TODO: Implementar afegir pel路l铆cula
                     afegirPeli(cataleg);
                     break;
 
                 case 3:
-                    System.out.println("Has seleccionat: Buscar pel穕韈ula per ID");
+                    System.out.println("Has seleccionat: Buscar pel路l铆cula per ID");
                     buscarPeliId(cataleg);
                     break;
 
                 case 4:
-                    System.out.println("Has seleccionat: Buscar pel穕韈ula segunda Parte");
+                    System.out.println("Has seleccionat: Buscar pel路l铆cula segunda Parte");
                     buscarPeliSegundaParte(cataleg);
                     break;
 
                 case 5:
-                    System.out.println("Has seleccionat: Borrar pel穕韈ula");
+                    System.out.println("Has seleccionat: Borrar pel路l铆cula");
                     borrarPeli(cataleg);
                     break;
 
                 case 6:
-                    System.out.println("Has seleccionat: Llistar pel穕韈ules");
+                    System.out.println("Has seleccionat: Llistar pel路l铆cules");
                     llistarPelicules(cataleg);
                     break;
 
                 case 7:
-                    System.out.println("Has seleccionat: Borrar pel穕韈ula nombre");
+                    System.out.println("Has seleccionat: Borrar pel路l铆cula nombre");
                     borrarPeliNombre(cataleg);
                     break;
                     
@@ -82,7 +82,7 @@ public class CatalegPelisMVC {
                     break;
                     
                 case 9:
-                    System.out.println("Has seleccionat: Llistar pel穕韈ules ordenadas por nombre");
+                    System.out.println("Has seleccionat: Llistar pel路l铆cules ordenadas por nombre");
                     llistarPeliculesOrdenades(cataleg);
                     break;         
                     
@@ -131,11 +131,11 @@ public class CatalegPelisMVC {
                 */
         if (cataleg.addPeli(anyadir))
         { /*3 parte recoger y mostrar salida*/
-            System.out.println("Pelicula a馻dida correctamente");
+            System.out.println("Pelicula a帽adida correctamente");
         }
         else
         {
-            System.out.println("Pelicula no se ha podido a馻dir"
+            System.out.println("Pelicula no se ha podido a帽adir"
            + " posiblemente por id repetido ");
         }
     }
@@ -271,15 +271,15 @@ public class CatalegPelisMVC {
     }
 
     private void anyadirItemsMenu(Menu menuConsola) {
-        menuConsola.afegirOpcio("Afegir Pel穕韈ula");
-        menuConsola.afegirOpcio("Buscar pel穕韈ula per id");
-        menuConsola.afegirOpcio("Buscar pel穕韈ula con segundas parte");
-        menuConsola.afegirOpcio("Borrar pel穕韈ula");
-        menuConsola.afegirOpcio("Llistar pel穕韈ules");
-        menuConsola.afegirOpcio("Borrar pel穕韈ula por nombre");
+        menuConsola.afegirOpcio("Afegir Pel路l铆cula");
+        menuConsola.afegirOpcio("Buscar pel路l铆cula per id");
+        menuConsola.afegirOpcio("Buscar pel路l铆cula con segundas parte");
+        menuConsola.afegirOpcio("Borrar pel路l铆cula");
+        menuConsola.afegirOpcio("Llistar pel路l铆cules");
+        menuConsola.afegirOpcio("Borrar pel路l铆cula por nombre");
         menuConsola.afegirOpcio("Filtrar por Genero");
-        menuConsola.afegirOpcio("Afegir Pel穕韈ula");
-        menuConsola.afegirOpcio("Llistar pel穕韈ules ordenades");
+        menuConsola.afegirOpcio("Afegir Pel路l铆cula");
+        menuConsola.afegirOpcio("Llistar pel路l铆cules ordenades");
          menuConsola.afegirOpcio("Canviar titulo a peli (id ) (PreparedStatement)");
     }
 
