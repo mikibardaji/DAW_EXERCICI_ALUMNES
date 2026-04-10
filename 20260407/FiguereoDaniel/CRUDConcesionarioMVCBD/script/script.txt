@@ -1,0 +1,28 @@
+-- Crear base de datos
+CREATE DATABASE IF NOT EXISTS concesionario;
+USE concesionario;
+
+-- Crear tabla coches
+CREATE TABLE coches (
+    matricula VARCHAR(10) PRIMARY KEY,
+    marca VARCHAR(50) NOT NULL,
+    puertas INT NOT NULL,
+    automatico BOOLEAN NOT NULL
+);
+
+-- Crear usuario con todos los permisos
+CREATE USER 'usuario_concesionario'@'localhost' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON concesionario.* TO 'usuario_concesionario'@'localhost';
+FLUSH PRIVILEGES;
+
+INSERT INTO coches (matricula, marca, puertas, automatico) VALUES
+('7788MNO', 'Audi', 5, TRUE),
+('8899PQR', 'Volkswagen', 3, FALSE),
+('1122STU', 'Mercedes', 5, TRUE),
+('2233VWX', 'Renault', 5, FALSE),
+('3344YZA', 'Peugeot', 3, FALSE),
+('4455BCD', 'Kia', 5, TRUE),
+('5566EFG', 'Hyundai', 5, FALSE),
+('6677HIJ', 'Citroen', 3, FALSE),
+('7788KLM', 'Nissan', 5, TRUE),
+('8899NOP', 'Honda', 5, TRUE);
