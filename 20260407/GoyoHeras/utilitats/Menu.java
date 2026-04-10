@@ -11,7 +11,7 @@ public class Menu {
     public Menu(String titol) {
         this.titol = titol;
         this.opcions = new ArrayList<>();
-        opcioSalida = 0; // Opció de sortida per defecte
+        opcioSalida = 0; // OpciÃ³ de sortida per defecte
     }    
 
     public Menu(String titol, boolean afegirOpcioSortida) {
@@ -50,19 +50,19 @@ public class Menu {
         boolean valid = false;
         while (!valid) {
             try {
-                System.out.print("Selecciona una opci�: ");
+                System.out.print("Selecciona una opció: ");
                 int opcio = scanner.nextInt();
                 scanner.nextLine(); // Neteja el buffer
                 if (opcio >= 1 && opcio <= opcions.size()) {
                     valid   = true;
                     return opcio;
                 } else {
-                    System.out.println("Opci� no v�lida. Torna-ho a intentar.");
+                    System.out.println("Opció no vàlida. Torna-ho a intentar.");
                     valid = false;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Error: Has d'introduir un n�mero.");
-                scanner.nextLine(); // Consumir la línia errònia
+                System.out.println("Error: Has d'introduir un número.");
+                scanner.nextLine(); // Consumir la lÃ­nia errÃ²nia
                 valid = false;
             }
             
