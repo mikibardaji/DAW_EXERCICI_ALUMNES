@@ -37,11 +37,11 @@ public class PeliculaDAO implements InterfaceDAO{
 
     public boolean addPeli(Pelicula anyadir) {
         /*validaciones
-        por ejemplo no queremos pelis de 18 años
+        por ejemplo no queremos pelis de 18 aÃ±os
         lanzaria excepcion (falta atributo edad en pelis)*/
         /* validacion que no exista una peli con el mismo id en el catalogo*/
         if (cataleg.contains(anyadir))
-        { //no quiero añadir una peli con el mismo id
+        { //no quiero aÃ±adir una peli con el mismo id
             return false;//la otra opcion seria tirar una exception
         }
         return cataleg.add(anyadir);
@@ -57,7 +57,7 @@ public class PeliculaDAO implements InterfaceDAO{
         
         for (int i = 0; i < cataleg.size(); i++) {
             if (cataleg.get(i).getSegundaParte()==segunda)
-            { //coincide lo añado
+            { //coincide lo aÃ±ado
                 seleccionadas.add(cataleg.get(i));
             }
         }
