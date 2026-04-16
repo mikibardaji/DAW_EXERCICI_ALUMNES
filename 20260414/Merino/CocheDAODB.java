@@ -51,7 +51,7 @@ public class CocheDAODB {
             return Tienda;
             
         } else {
-            throw new SQLException("Conexión fallida");
+            throw new SQLException("ConexiÃ³n fallida");
         }
     }
     
@@ -74,13 +74,13 @@ public class CocheDAODB {
             conn.close();
             return filas;
         } else {
-            throw new SQLException("Conexión fallida");       
+            throw new SQLException("ConexiÃ³n fallida");       
         }
                 
     }
 
     public int modificarCar(Coche cochesModificar) throws SQLException {
-        conn = DbConnect.getConnection();
+        conn = DbConnect.getConnection();//
         
         boolean existe = existeCocheMatricula(cochesModificar.getMatricula());
         
@@ -105,7 +105,7 @@ public class CocheDAODB {
         return preparedtate;
     }
         else {
-            return 0; // porque no existe la matrícula
+            return 0; // porque no existe la matrÃ­cula
         }
 }
 
@@ -118,7 +118,7 @@ public class CocheDAODB {
         ResultSet rs = pstmt.executeQuery();
         int numero = 0;
         if (rs.next()) {
-            numero = rs.getInt("Número");
+            numero = rs.getInt("NÃºmero");
         }
         return numero == 1; // si ha dado 1 es que existe y si no es false.
     }
