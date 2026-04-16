@@ -27,7 +27,7 @@ public class VistaConsolaConcesionario {
             
             /* Crear una variable pel model de dades*/
             //LuchadorDAOList repositori = new LuchadorDAOList();
-            Menu menuConcesionario = new Menu("Concesionario DAW");
+            Menu menuConcesionario = new Menu("Concesionario DAW");//
             anyadirOpcionesMenu(menuConcesionario);
             int opcion=0;
             do {
@@ -51,11 +51,11 @@ public class VistaConsolaConcesionario {
                         modificarCoches(modelo);
                         break;
                     case 4:
-                        System.out.println("Eliminar Coche por nº de puertas");
+                        System.out.println("Eliminar Coche por nÂº de puertas");
                         eliminarCochesPorPuerta(modelo);
                         break;
                     case 5:
-                        System.out.println("Consultar las características del coche");
+                        System.out.println("Consultar las caracterÃ­sticas del coche");
                         concultarCaractCoche(modelo);
                         break;
                     default:
@@ -63,7 +63,7 @@ public class VistaConsolaConcesionario {
                              System.out.println("Salir");
                         }
                         else {
-                            System.out.println("Opción incorrecta.");
+                            System.out.println("OpciÃ³n incorrecta.");
                         }
                         //borrarLuchador(repositori);
                         break;
@@ -82,8 +82,8 @@ public class VistaConsolaConcesionario {
         menuConcesionario.afegirOpcio("Alta Ccohe");
         menuConcesionario.afegirOpcio("Listar todos Coche");
         menuConcesionario.afegirOpcio("Modificar datos de Coche");
-        menuConcesionario.afegirOpcio("Eliminar Coche por nº de puertas");
-        menuConcesionario.afegirOpcio("Consultar características Coche");
+        menuConcesionario.afegirOpcio("Eliminar Coche por nÂº de puertas");
+        menuConcesionario.afegirOpcio("Consultar caracterÃ­sticas Coche");
         menuConcesionario.afegirOpcio("Salir");
         menuConcesionario.setOpcioSalida(6); //salida
     }
@@ -106,18 +106,18 @@ public class VistaConsolaConcesionario {
         
         try {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Dime la matrícula del coche:");
+            System.out.println("Dime la matrÃ­cula del coche:");
             String matricula = sc.nextLine().toUpperCase();
             if (matricula.length() == 7) {
             System.out.println("Dime la marca:");
             String marca = sc.nextLine();
-            System.out.println("Dime el número de puertas:");
+            System.out.println("Dime el nÃºmero de puertas:");
             int puertas = sc.nextInt();
             sc.nextLine();
-            System.out.println("¿Es automático?");
+            System.out.println("Â¿Es automÃ¡tico?");
             String respuesta = sc.nextLine();
             boolean autom;
-            if (respuesta.equalsIgnoreCase("Sí")) {
+            if (respuesta.equalsIgnoreCase("SÃ­")) {
                 autom = true;
             } else {
                 autom = false;
@@ -128,10 +128,10 @@ public class VistaConsolaConcesionario {
             if (cocheNuevo == 1) {
                 System.out.println("El coche se ha registrado correctamente.");
             } else {
-                System.out.println("Operación fallida.");
+                System.out.println("OperaciÃ³n fallida.");
             }
         } else {
-                System.err.println("La longitud de la matrícula debe ser 7.");
+                System.err.println("La longitud de la matrÃ­cula debe ser 7.");
             }
             }
              catch (SQLException ex) {
@@ -143,19 +143,19 @@ public class VistaConsolaConcesionario {
     private void modificarCoches(CocheDAODB modelo) {
         Scanner sc = new Scanner(System.in);
             
-            System.out.println("Dime la matrícula del coche que quieres modificar:");
+            System.out.println("Dime la matrÃ­cula del coche que quieres modificar:");
             String matricula = sc.nextLine().toUpperCase();
             if (matricula.length() == 7) {
             try {
                 System.out.println("Dime la nueva marca:");
                 String marca = sc.nextLine();
-                System.out.println("Dime el número de puertas:");
+                System.out.println("Dime el nÃºmero de puertas:");
                 int puertas = sc.nextInt();
                 sc.nextLine();
-                System.out.println("¿Es automático?");
+                System.out.println("Â¿Es automÃ¡tico?");
                 String respuesta = sc.nextLine();
                 boolean autom;
-                if (respuesta.equalsIgnoreCase("Sí")) {
+                if (respuesta.equalsIgnoreCase("SÃ­")) {
                     autom = true;
                 } else {
                     autom = false;
@@ -164,7 +164,7 @@ public class VistaConsolaConcesionario {
                 int update = modelo.modificarCar(cochesModificar);
                 
                 if (update == 0) {
-                    System.err.println("Matrícula no existente" + matricula);
+                    System.err.println("MatrÃ­cula no existente" + matricula);
                 } else {
                     System.out.println("Se han actualizado: " + update + " coche.");
                 }
@@ -172,7 +172,7 @@ public class VistaConsolaConcesionario {
                 System.err.println(ex.getMessage());
             }
             } else {
-                    System.err.println("La longitud de la matrícula debe ser 7.");
+                    System.err.println("La longitud de la matrÃ­cula debe ser 7.");
             }
     }
 
@@ -180,7 +180,7 @@ public class VistaConsolaConcesionario {
         try {
             Scanner sc = new Scanner(System.in);
             
-            System.out.println("¿De cuántas puertas quieres borrar el coche?");
+            System.out.println("Â¿De cuÃ¡ntas puertas quieres borrar el coche?");
             int puertas = sc.nextInt();
             
             Coche cochesEliminarPorPuerta = new Coche("", "", puertas, true);
@@ -200,20 +200,20 @@ public class VistaConsolaConcesionario {
         try {
             Scanner sc = new Scanner(System.in);
             
-            System.out.println("Dime la matrícula del coche que quieres ver las caracteríticas:");
+            System.out.println("Dime la matrÃ­cula del coche que quieres ver las caracterÃ­ticas:");
            String matricula = sc.nextLine();
 
             Coche cochesBuscarCaract = new Coche(matricula, "", 0, true);
             Coche buscarCoche = modelo.buscarCocheCaract(cochesBuscarCaract);
 
             if (buscarCoche != null) {
-                System.out.println("No existe ningún coche con esa matrícula.");
+                System.out.println("No existe ningÃºn coche con esa matrÃ­cula.");
             } else {
-                System.out.println("Características del coche:");
-                System.out.println("Matrícula: " + buscarCoche.getMatricula());
+                System.out.println("CaracterÃ­sticas del coche:");
+                System.out.println("MatrÃ­cula: " + buscarCoche.getMatricula());
                 System.out.println("Marca: " + buscarCoche.getMarca());
                 System.out.println("Puertas: " + buscarCoche.getPuertas());
-                System.out.println("Automático: " + buscarCoche.isAutomatico());
+                System.out.println("AutomÃ¡tico: " + buscarCoche.isAutomatico());
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
