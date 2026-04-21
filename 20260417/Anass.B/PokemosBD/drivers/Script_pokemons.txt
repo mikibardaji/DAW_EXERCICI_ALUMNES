@@ -1,0 +1,120 @@
+-- 1. Creación de la base de datos
+CREATE DATABASE IF NOT EXISTS pokedex;
+USE pokedex;
+
+-- 2. Creación del usuario y asignación de permisos
+-- Nota: Cambia 'usuario_pokem' y 'password123' por los que prefieras
+CREATE USER IF NOT EXISTS 'usuario_pokem'@'localhost' IDENTIFIED BY 'password123';
+GRANT ALL PRIVILEGES ON pokedex.* TO 'usuario_pokem'@'localhost';
+FLUSH PRIVILEGES;
+
+-- Taula de Pokémons
+CREATE TABLE pokemons (
+   id INTEGER PRIMARY KEY, -- número de Pokédex (no autoincremental)
+   nom VARCHAR(50) NOT NULL UNIQUE,
+   tipus VARCHAR(50),
+   nivell INTEGER,
+   capturats INTEGER DEFAULT 0
+);
+
+-- Taula d'evolucions
+CREATE TABLE evolucions (
+   pokemon_base VARCHAR(50) NOT NULL,
+   pokemon_evolucionat VARCHAR(50) NOT NULL,
+   PRIMARY KEY (pokemon_base)
+);
+
+-- Dades inicials
+INSERT INTO pokemons (id, nom, tipus, nivell, capturats) VALUES
+(1, 'Bulbasaur', 'Planta', 5, 0),
+(2, 'Ivysaur', 'Planta', 16, 0),
+(3, 'Venusaur', 'Planta', 32, 0),
+
+(4, 'Charmander', 'Foc', 5, 0),
+(5, 'Charmeleon', 'Foc', 16, 0),
+(6, 'Charizard', 'Foc', 36, 0),
+
+(7, 'Squirtle', 'Aigua', 5, 0),
+(8, 'Wartortle', 'Aigua', 16, 0),
+(9, 'Blastoise', 'Aigua', 36, 0),
+
+(10, 'Caterpie', 'Bicho', 3, 0),
+(11, 'Metapod', 'Bicho', 7, 0),
+(12, 'Butterfree', 'Bicho', 10, 0),
+
+(13, 'Weedle', 'Bicho', 3, 0),
+(14, 'Kakuna', 'Bicho', 7, 0),
+(15, 'Beedrill', 'Bicho', 10, 0),
+
+(16, 'Pidgey', 'Volador', 3, 0),
+(17, 'Pidgeotto', 'Volador', 18, 0),
+(18, 'Pidgeot', 'Volador', 36, 0),
+
+(19, 'Rattata', 'Normal', 3, 0),
+(20, 'Raticate', 'Normal', 20, 0),
+
+(25, 'Pikachu', 'Electric', 10, 0),
+(26, 'Raichu', 'Electric', 20, 0),
+
+(35, 'Clefairy', 'Fada', 10, 0),
+(36, 'Clefable', 'Fada', 20, 0),
+
+(39, 'Jigglypuff', 'Normal', 10, 0),
+(40, 'Wigglytuff', 'Normal', 20, 0),
+
+(41, 'Zubat', 'Volador', 8, 0),
+(42, 'Golbat', 'Volador', 22, 0),
+(169, 'Crobat', 'Volador', 30, 0),
+
+(63, 'Abra', 'Psiquic', 5, 0),
+(64, 'Kadabra', 'Psiquic', 16, 0),
+(65, 'Alakazam', 'Psiquic', 36, 0),
+
+(66, 'Machop', 'Lluita', 5, 0),
+(67, 'Machoke', 'Lluita', 16, 0),
+(68, 'Machamp', 'Lluita', 36, 0),
+
+(74, 'Geodude', 'Roca', 5, 0),
+(75, 'Graveler', 'Roca', 16, 0),
+(76, 'Golem', 'Roca', 36, 0);
+
+
+-- Evolucions
+INSERT INTO evolucions (pokemon_base, pokemon_evolucionat) VALUES
+('Bulbasaur', 'Ivysaur'),
+('Ivysaur', 'Venusaur'),
+
+('Charmander', 'Charmeleon'),
+('Charmeleon', 'Charizard'),
+
+('Squirtle', 'Wartortle'),
+('Wartortle', 'Blastoise'),
+
+('Caterpie', 'Metapod'),
+('Metapod', 'Butterfree'),
+
+('Weedle', 'Kakuna'),
+('Kakuna', 'Beedrill'),
+
+('Pidgey', 'Pidgeotto'),
+('Pidgeotto', 'Pidgeot'),
+
+('Rattata', 'Raticate'),
+
+('Pikachu', 'Raichu'),
+
+('Clefairy', 'Clefable'),
+
+('Jigglypuff', 'Wigglytuff'),
+
+('Zubat', 'Golbat'),
+('Golbat', 'Crobat'),
+
+('Abra', 'Kadabra'),
+('Kadabra', 'Alakazam'),
+
+('Machop', 'Machoke'),
+('Machoke', 'Machamp'),
+
+('Geodude', 'Graveler'),
+('Graveler', 'Golem');
