@@ -12,4 +12,4 @@ Es un 0,25 pts de la nota d'examen. el examen valdrà 9,75
 
 És te que entregar abans del dilluns a les 9 del matí, **NO DIMARTS**
 
-![Disposició Pantalla](pantalla.jpg)
+![Disposició Pantalla](Pantalla.jpg)
