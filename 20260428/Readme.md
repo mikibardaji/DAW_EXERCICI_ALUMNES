@@ -1,6 +1,6 @@
 # Realitzar una pantalla per poder introduir totes les dades de lluitador del examen
 
-En aquesta pantalla s'ha de poder ficar les dades de tot el lluitador en diferents JtextField, i a més a la dreta hi ha d'haver-hi tants botons com opcións hi hagi de menú del examen.
+En aquesta pantalla s'ha de poder ficar les dades de tot el lluitador en diferents JtextField, i a més a la dreta hi ha d'haver-hi tants botons com opcións hi hagi de menú del examen. La imatge es cutre, pero el de la dreta son botons.
 
 Te que funcionar de manera similar al codi fet a classe.
 
