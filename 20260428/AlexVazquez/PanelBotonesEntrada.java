@@ -8,10 +8,7 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Jeremy
- */
+
 public class PanelBotonesEntrada extends JPanel{
     JButton boton1 ;
     JButton boton2 ;
