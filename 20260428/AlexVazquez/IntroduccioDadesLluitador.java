@@ -6,10 +6,7 @@ package introducciodadeslluitador;
 
 import deberes.FinestraPrincipal;
 
-/**
- *
- * @author Jeremy
- */
+
 public class IntroduccioDadesLluitador {
 
     /**
