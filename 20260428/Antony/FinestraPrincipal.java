@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author marc
+ * @author marck
  */
 public class FinestraPrincipal extends JFrame{
     
