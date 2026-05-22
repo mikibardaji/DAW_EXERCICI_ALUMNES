@@ -179,7 +179,7 @@ public class panel extends JPanel implements ActionListener{
 
     private void acertar() {
         String respuesaUsuario = texto.getText();
-        if (respuesaUsuario.equalsIgnoreCase(respuesaUsuario)) {
+        if (respuesaUsuario.equalsIgnoreCase(respuestaCorrecta)) {
               JOptionPane.showMessageDialog(null, "MUY BIen listo", "acertaste", JOptionPane.ERROR_MESSAGE);
        textoPregunta.setText("MUY BIEN LISTO");
         }

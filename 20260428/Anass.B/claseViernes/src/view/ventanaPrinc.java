@@ -34,7 +34,7 @@ panelSecundario panelSec;
     JMenuItem op3;
 
     public ventanaPrinc() {
-       
+        al = this;
         initMenu();
         initComponentsTitle();
         initContainer();
@@ -70,8 +70,8 @@ panelSecundario panelSec;
         barra = new JMenuBar();
         opciones = new JMenu("opciones");
         op1 = new JMenuItem("Adivina");
-        op2 = new JMenuItem("Adivina");
-        op3 = new JMenuItem("Adivina");
+        op2 = new JMenuItem("sec");
+        op3 = new JMenuItem("salir");
         
         opciones.add(op1);
         opciones.add(op2);
@@ -83,7 +83,8 @@ panelSecundario panelSec;
         op1.addActionListener(al);
         
         op2.setActionCommand("op2");
-        op2.addActionListener(al);
+        op2.addActionListener(al); //si no me acuerdo puedo poner this
+        //sino en el constrcutor tiene que haber al=this;
         
         op3.setActionCommand("op3");
         op3.addActionListener(al);
@@ -93,6 +94,7 @@ panelSecundario panelSec;
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println("hoooooo");
         String accion = e.getActionCommand();
         System.out.println(accion);
         
