@@ -27,7 +27,7 @@ public class CalcularAreaCuadrado {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Dime el lado del cuadrado");
         lado = teclado.nextDouble();
-        area = lado * 2;
+        area = lado * lado;
         System.out.println("El area es "+lado+" * "+lado+" = "+area);
     }
     
