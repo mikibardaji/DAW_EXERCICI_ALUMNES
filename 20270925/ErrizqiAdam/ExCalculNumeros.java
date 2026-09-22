@@ -28,15 +28,15 @@ public class ExCalculNumeros {
 
      */
     public static void main(String[] args) {
-        double num1, num2, suma_nums, resta_nums, producte_nums, divisio_nums;
+        int num1, num2, suma_nums, resta_nums, producte_nums, divisio_nums;
        
         Scanner texto =new Scanner(System.in);
        
         System.out.println("Introdueix el primer numero");
-        num1=texto.nextDouble();
+        num1=texto.nextInt();
        
         System.out.println("Introdueix el segon numero");
-        num2=texto.nextDouble();
+        num2=texto.nextInt();
        
         suma_nums = num1+num2;
         System.out.println("Suma: " + suma_nums);
