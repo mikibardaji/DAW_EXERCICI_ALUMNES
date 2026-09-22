@@ -27,8 +27,6 @@ public class Cambiodivisa {
         //Calcular CAMBIO
         dinero_cambio = dinero * cambio_divisa;
         System.out.println("Tienes" +  dinero_cambio);
-
-        // TODO code application logic here
     }
     
 }
