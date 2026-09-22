@@ -44,7 +44,7 @@ public class ExCalculNumeros {
         System.out.println("Resta: " + resta_nums);
         producte_nums = num1*num2;
         System.out.println("Producte: " + producte_nums);
-        divisio_nums = num1/num2;
+        divisio_nums = (double) num1/num2;
         System.out.println("Divisio: " + divisio_nums);
     }
    
