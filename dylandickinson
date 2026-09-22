@@ -1,1 +1,32 @@
+package cambiodivisa;
 
+/**
+ *
+ * @author cdi1866
+ */
+import java.util.Scanner;
+public class Cambiodivisa { 
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {//Inicio
+        //Declaracion variables y scanner
+        int dinero;
+        int cambio_divisa;
+        int dinero_cambio;
+        Scanner teclado = new Scanner (System.in);
+        //"Introduce un monto de dinero"
+        System.out.println("Introduce un monto de dinero");
+        //Esperar CANT_DINERO
+        dinero = teclado.nextInt ();
+        //Mostrar “¿A cuanto está el cambio?”
+        System.out.println("A cuanto esta el cambio?");
+     //Esperar DIVISA
+       cambio_divisa = teclado.nextInt ();
+        //Calcular CAMBIO
+        dinero_cambio = dinero * cambio_divisa;
+        System.out.println("Tienes" +  dinero_cambio) 
+    }
+    
+}
