@@ -1,0 +1,17 @@
+6.- Programa que donat el preu total, i el descompte (%), et digui el cost del producte.
+      1.-INICIO
+      2.- Mostrar “Cual es el precio total?: ”
+      3.- Esperar precioTotal
+      4.- Mostrar “Cual es el descuento?: ”
+      5.- Esperar PorcentajeDescuento
+      6.- Calcular descuento= precioTotal * porcentajeDescuento;
+      7.-Calcular precioFinal=precioTotal-descuento;
+      8.-Mostrar descuento
+      9.- FIN
+8.- Programa que llegeixi un valor corresponent a una temperatura en graus Fahrenheit i escriviu la temperatura en graus Celsius.
+      1.-INICIO
+      2.- Mostrar “Introduce la temperatura en grados Fahrenheit:  ”
+      3.- Esperar tempFahren
+      4.- Calcular Celsius=(tempFahren-32)*5/9
+      5.- Mostrar Celsius
+      6.- FIN
