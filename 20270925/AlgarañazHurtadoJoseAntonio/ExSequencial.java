@@ -1,0 +1,28 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exsequencial;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author jal6318
+ */
+public class ExSequencial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int costado, area;
+        Scanner scan=new Scanner (System.in);
+        System.out.println("Introduce el valor de un costado: ");
+        costado=scan.nextInt();
+        area=costado*costado;
+        System.out.println("El area del cuadrado es= "+area);
+        
+    }
+    
+}
