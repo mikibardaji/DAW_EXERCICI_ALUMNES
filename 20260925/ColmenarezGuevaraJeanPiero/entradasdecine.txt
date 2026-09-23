@@ -1,0 +1,49 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package dineroentradacine;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author jco5780
+ */
+public class DineroEntradaCine {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        // Inicio
+        // Declaracion variables primitivas y del scanner
+        int preu_entrada, diners_restants, preu_entrades_total;
+        int dinero_cartera, num_entrades;
+        preu_entrada = 10;
+        
+        Scanner teclado = new Scanner(System.in);
+
+        // Mostrar "Quants diners tens?"
+        System.out.println("Quants diners tens?");
+        // Esperar dinero_cartera
+        dinero_cartera = teclado.nextInt();
+        
+        // Mostrar "Quantes entrades has comprat?"
+        System.out.println("Quantes entrades has comprat?");
+        // Esperar num_entrades
+        num_entrades = teclado.nextInt();
+
+        // Calcular preu_entrada_total = preu_entrada x num_entrades
+        preu_entrades_total = preu_entrada * num_entrades;
+        
+        // Calcular diners_restants = dinero_cartera - preu_entrades_total
+        diners_restants = dinero_cartera - preu_entrades_total;
+        
+        // Mostrar resultado
+        System.out.println("Et queden " + diners_restants + " €");
+
+        teclado.close();
+    }
+}

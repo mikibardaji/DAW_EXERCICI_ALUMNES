@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Start small. Ship something.");
+
+        Scanner teclado = new Scanner(System.in);
+        String nom_usuari;
+        double area, base, altura, costado, areaquadrado;
+        double num1, num2, suma, resta, producto, division, total, descont_total;
+        double descont;
+        double precio_nominal, precio_venda, descont2;
+        double fahr, celsius;
+
+        // Ejercicio 1
+        System.out.println("Cual es tu nombre de usuario? ");
+        nom_usuari = teclado.nextLine();
+        System.out.println("Bienvenido " + nom_usuari);
+
+        // Ejercicio 2
+        System.out.println("Escribe el costado de un cuadrado para calcular ");
+        costado = teclado.nextDouble();
+       
+        //formula
+        areaquadrado = costado * costado;
+        System.out.println("El area del cuadrado es: " + areaquadrado);
+
+        // Ejercicio 3
+        System.out.println("Escribe la base del rectangulo: ");
+        base = teclado.nextDouble();
+        System.out.println("Escribe la altura del rectangulo: ");
+        altura = teclado.nextDouble();
+        //formula
+        area = base * altura;
+        System.out.println("El area del rectangulo es: " + area);
+
+        // Ejercicio 4
+        System.out.println("Introduce el primer numero: ");
+        num1 = teclado.nextDouble();
+        System.out.println("Introduce el segundo numero: ");
+        num2 = teclado.nextDouble();
+
+        // Fórmula
+        suma = num1 + num2;
+        resta = num1 - num2;
+        producto = num1 * num2;
+        division = num1 / num2;
+
+       System.out.println("Resultados de las operaciones:");
+        System.out.println("Suma: " + num1 + " + " + num2 + " = " + suma);
+        System.out.println("Resta: " + num1 + " - " + num2 + " = " + resta);
+        System.out.println("Producto: " + num1 + " * " + num2 + " = " + producto);
+        System.out.println("Division: " + num1 + " / " + num2 + " = " + division);
+
+        // Ejercicio 6
+        System.out.println("Calculamos el porcentaje % de un descuento, di un numero... ");
+        descont = teclado.nextDouble();
+        System.out.println("Ahora descontamos con el numero total ");
+        total = teclado.nextDouble();
+        //formula
+        descont_total = total - (total * (descont / 100));
+        System.out.println("Fórmula: " + total + " - (" + total + " * (" + descont + " / 100))");
+        System.out.println("resultado total " + descont_total);
+
+        //ejercicio 7 
+        System.out.println("Introduce el precio nominal");
+        precio_nominal = teclado.nextDouble();
+        System.out.println("Introduce el precio de venta real");
+        precio_venda = teclado.nextDouble();
+
+        //formula    
+        descont2 = ((precio_nominal - precio_venda) / precio_nominal) * 100.0;    
+        System.out.println("Formula: ((" + precio_nominal + " - " + precio_venda + ") / " + precio_nominal + ") * 100");
+        System.out.println("El porcentaje de descuento realizado es: " + descont2 + "%");    
+            
+         //Ejercicio 8 
+        System.out.println("Escribe la temperatura en grados Fahrenheit: ");
+        fahr  = teclado.nextDouble();
+
+        // formula
+        celsius = (fahr - 32.0) * (5.0 / 9.0);
+        System.out.println("Formula: (" + fahr + " - 32) * (5 / 9)");
+        System.out.println("La temperatura en Celsius es: " + celsius);
+
+
+        //No tengo ordenador, esto es de programiz.com, es horrible
+        
+            teclado.close();
+    }
+}
