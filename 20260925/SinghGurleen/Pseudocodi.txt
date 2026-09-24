@@ -1,0 +1,24 @@
+6.Programa que donat el preu total, i el descompte (%), et digui el cost del producte.
+
+1. Inicio                                                                                          
+2. Mostrar "Precio total" 
+3. Esperar precio_total 
+4. Mostrar "Descuento" 
+5. Esperar descuento 
+6. Calcular coste = precio_total * descuento / 100 Calcular coste - descuento 
+7. Mostrar "El precio total" coste
+8. Fin
+
+7.Programa que llegeixi un valor corresponent a una temperatura en graus Fahrenheit i 
+escriviu la temperatura en graus Celsius. En aquest exercici definir una constant per 
+el valor que s'ha de sumar, com vam fer amb PI.
+
+1. Inicio
+2. Mostra "pregunta cuanto es la temperatura" 
+3. Espera temperatura Mostra "graus Fahrenheit" 
+4. Espera gr_fahrenheit
+5. Calcula grauc = (gr_fahrenheit- 32) * 5 / 9 
+6. Mostra "gr_celsius" 
+7. Fina
+
+
