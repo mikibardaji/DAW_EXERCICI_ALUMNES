@@ -1,0 +1,17 @@
+Exercici 6:
+1.	inicio
+2.	Mostrar “ Introduce el precio Total”   
+3.	mostar “ Introduce el descuento %”
+4.	esperar mostrar_descuento
+5.	calcular  coste_final = Precio_Total - (Precio_Total * mostrar_descuento / 100)
+6.	mostar “ El producto tiene un costo de” + coste_final
+
+Exercici 8:
+
+FÓRMULA CELSIUS : Celsius = (Fahrenheit - 32) * 5 / 9
+ 
+1.	inicio 
+2.	Mostrar “ Introduce la temperatura en Fahrenheit”
+3.	esperar temp_Fahrenheint
+4.	esperar temp_celsius = (temp_Fahrenheint - 32) * 5 /9 ;
+5.	mostar “La temperatura en Celsius es:” + celsius)
