@@ -1,1 +1,35 @@
+Programa que donat el preu total, i el descompte (%), et digui el cost del producte. 
 
+1- Inicio 
+
+2- Mostrar: “¿Quin es el preu total del producte?” 
+
+3- Esperar preu total 
+
+4- Mostrar “¿Quin es el percentatge de descompte que té el producte?” 
+
+5- Esperar percentatge descompte  
+
+6- Calcular: descompte = preu total * percentatge descompte / 100 
+
+7- Calcular: preu final = preu total – descompte 
+
+8- Mostrar “El cost final del producte es ...” 
+
+ 
+
+Programa que llegeixi un valor corresponent a una temperatura en graus Fahrenheit i escriviu la temperatura en graus Celsius. 
+
+	 
+
+	1- Inicio 
+
+	2- Mostrar "¿Quina es la temperatura en graus Fahrenheit?" 
+
+	3- Esperar fahrenheit 
+
+	4- Calcular: pas1 = fahrenheit - 32 
+
+	5- Calcular: celsius = pas1 * 5 / 9 
+
+	6- Mostrar "Aquesta temperatura en graus celsius son ..." 
