@@ -1,1 +1,21 @@
-20260925/SudipKandel
+6: Programa que donat el preu total, i el descompte (%), et digui el cost del producte. 
+
+Inicio
+Mostrar “¿Cuál es el precio total?”
+Esperar preu_total
+Mostrar “¿Cuál es el descuento (%)?”
+Esperar descompte
+Calcular preu_descompte = preu_total * descompte / 100
+Calcular preu_final = preu_total - preu_descompte
+Mostrar “El coste del producto es ” + preu_final
+Fin
+
+
+8: Programa que llegeixi un valor corresponent a una temperatura en graus Fahrenheit i escriviu la temperatura en graus Celsius. \\
+
+Inicio
+Mostrar “¿Cuál es la temperatura en Fahrenheit?”
+Esperar temperatura_fahrenheit
+Calcular temperatura_celsius = (temperatura_fahrenheit - 32) * 5 / 9
+Mostrar “La temperatura en Celsius es ” + temperatura_celsius
+Fin
