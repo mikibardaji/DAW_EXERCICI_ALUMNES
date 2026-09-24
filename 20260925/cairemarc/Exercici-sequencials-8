@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici_sequencials_8;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici_sequencials_8 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        
+        // mostrmos la temperatura en Fahrenheit
+        System.out.println("Introduce la temperatura en Fahrenheit");
+        
+        //esperamos la respuesta en temp_Fahrenheit
+        double temp_Fahrenheit = sc.nextDouble();
+        
+        //y una vez tenmos la respuesta  hacemos el calculo con la siguiente formula para conseguir los grados en celsius
+        double temp_Celsius = (temp_Fahrenheit - 32) * 5/9;
+        
+        // y finalizamos mostrando la temperatura el celius 
+        System.out.println("La temperatura en celsius" + temp_Celsius);
+        
+        
+    }
+    
+}
