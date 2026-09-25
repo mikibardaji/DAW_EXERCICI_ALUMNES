@@ -32,7 +32,7 @@ public class ExerciciValoracioUser {
     //8.Esperar valUser3
         valUser3= sc.nextInt();
     //9. Calcular valTotal =(valUser1 + valUser2 + valUser3) / 3
-        valTotal =(valUser1 + valUser2 + valUser3) / 3;
+        valTotal = (double) (valUser1 + valUser2 + valUser3) / 3;
     //10. Mostrar “Tu valoración media es de  “ + valTotal :)
         System.out.print("Tu valoracion media es de  " + valTotal);
         //11. Fin
@@ -40,3 +40,4 @@ public class ExerciciValoracioUser {
     }
     
 }
+
