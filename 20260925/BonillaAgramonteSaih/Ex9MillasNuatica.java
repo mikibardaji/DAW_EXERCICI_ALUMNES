@@ -21,7 +21,7 @@ public class Ex9MillasNautica {
         double millasNauticas, metros;       
         
         //mostrar cuantas millas 
-        System.out.println("¿Cuantas millas nauticas?");
+        System.out.println("¿Dime cuantas millas nauticas haz recorrido?");
         
         // esperar millas 
         millasNauticas = teclado.nextDouble();
