@@ -16,18 +16,18 @@ public class Ex9transformarmiles {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner teclado = new Scanner (System.in);
-        double MilesaMetros = 1852;
-        double miles, metros;
+       Scanner teclado = new Scanner (System.in);
+        final int MillasaMetros = 1852;
+        double milasNauticas, metros;
         
     // Mostrar cuantos miles 
-    System.out.println("Cuantos miles hay");
-    // Erspera milla
-    miles = teclado.nextDouble();
-    // Calcular metros = milles * miles a metro
-    metros = miles * MilesaMetros;
+    System.out.println("Dime cuantas millas nauticas has recorrido? ");
+    // Erspera milasNauticas
+    milasNauticas = teclado.nextDouble();
+    // Calcular metros = milasNauticas * millas a metro
+    metros = milasNauticas * MillasaMetros;
     //Mostrar milles en metros son .. metros
-    System.out.println("milles en metros son " + metros);
+    System.out.println("En metros serian " + metros);
 
 
 
