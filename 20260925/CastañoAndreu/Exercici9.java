@@ -19,7 +19,7 @@ public class ExerciciSequencial9 {
 //9. Programa que transforma las milles nàutiques a metres .
 //Inicio
 //Definir constante: millasAmetros: 1852
-int millasAmetros = 1852;
+final int millasAmetros = 1852;
 double millas, metros;
 Scanner teclado = new Scanner(System.in);
 //Mostrar: “¿Cuántas millas náuticas?"
