@@ -5,7 +5,7 @@
 package exercici6;
 
 import java.util.Scanner;
-
+  
 /**
  *
  * @author myths
