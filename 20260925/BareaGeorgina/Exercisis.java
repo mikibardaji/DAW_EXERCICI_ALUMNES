@@ -19,62 +19,62 @@ public class Exercisis {
         int alt, area, altRect, ancho, areaRect, num1, num2, suma, resta, div, prod, preu, desc, total;
         String nom;
         double lon, num, area5, volum, nominal, venda, perc, fah, cel, nau, metres;
-        // Programa que pregunti el nom a l’usuari i doni el  “bon dia” indicant el nom. 
+        // Programa que pregunti el nom a lâ€™usuari i doni el  â€œbon diaâ€ indicant el nom. 
         System.out.println("EJERCICIO 1");
-        //Mostrar “Cual es tu nombre? ”
+        //Mostrar â€œCual es tu nombre? â€
         System.out.print("Cual es tu nombre? ");
         //Esperar nom
         nom = teclado.next();
-        //Mostrar “Bon dia” + nom
+        //Mostrar â€œBon diaâ€ + nom
         System.out.println("Bon dia " + nom);
         System.out.println("EJERCICIO 2");
-        //Mostrar “Introduce altura”
+        //Mostrar â€œIntroduce alturaâ€
         System.out.print("Introduce la altura: ");
         //Esperar alt
         alt = teclado.nextInt();
         //Calcular area = alt * alt;
         area = alt * alt;
-        //Mostrar “El area de tu cuadrado es de ” + area
+        //Mostrar â€œEl area de tu cuadrado es de â€ + area
         System.out.println("El area de tu cuadrado es de " + area);
-        //Programa que calcula l'?rea d'un RECTANGLE, dades d’entrada s'introdueixen per teclat.
+        //Programa que calcula l'?rea d'un RECTANGLE, dades dâ€™entrada s'introdueixen per teclat.
         System.out.println("EJERCICIO 3");
-        //Mostrar “Introduce altura”
+        //Mostrar â€œIntroduce alturaâ€
         System.out.print("Introduce la altura: ");
         //Esperar altRct 
         altRect = teclado.nextInt();
-        //Mostrar “Introduce ancho”
+        //Mostrar â€œIntroduce anchoâ€
         System.out.print("Introduce el ancho: ");
         //Esperar ancho
         ancho = teclado.nextInt();
         //Calcular area = altrect * ancho;
         areaRect = altRect * ancho;
-        //Mostrar “El area de tu rectangulo es de ” + area
+        //Mostrar â€œEl area de tu rectangulo es de â€ + area
         System.out.println("El area de tu rectangulo es de " + areaRect);
-        //Programa que llegeixi DOS N?MEROS, calcula i mostra el valor de la suma, la resta, el producte i la divisió.
+        //Programa que llegeixi DOS N?MEROS, calcula i mostra el valor de la suma, la resta, el producte i la divisiÃ³.
         System.out.println("EJERCICIO 4");
-        //Mostrar “Introduce el primer numero”
+        //Mostrar â€œIntroduce el primer numeroâ€
         System.out.print("Introduce el primer nuemro: ");
         //Esperar num1
         num1 =teclado.nextInt();
-        //Mostrar “Introduce el segundo numero”
+        //Mostrar â€œIntroduce el segundo numeroâ€
         System.out.print("Introduce el segundo numero: ");
         //Esperar num2
         num2 = teclado.nextInt();
         //Calcular suma = num1 + num2
         suma = num1 + num2;
-        //Mostrar “La suma es” + sum
+        //Mostrar â€œLa suma esâ€ + sum
         System.out.println("La suma es " + suma);
         //Calcular resta = num1 - num2
         resta = num1 - num2;
-        //Mostrar “La resta es” + resta
+        //Mostrar â€œLa resta esâ€ + resta
         System.out.println("La resta es " + resta);
         //Calcular prod = num1 * num2
         prod = num1 * num2;
-        //Mostrar “El producte es” + prod
+        //Mostrar â€œEl producte esâ€ + prod
         System.out.println("La multiplicacion es " + prod);
         //Calcular div = num1 / num2
         div = num1 / num2;
-        //Mostrar “La divisio es” + div
+        //Mostrar â€œLa divisio esâ€ + div
         System.out.println("La division es " + div);
         //Programa que pren com a dada d'entrada un n?mero 
         //que correspon a la longitud d'un radi 
@@ -82,73 +82,73 @@ public class Exercisis {
         //l'?rea del cercle i el volum de l'esfera que 
         //es corresponen amb aquest radi. 
         System.out.println("EJERCICIO 5");
-        //Mostrar “Digam el numero base: ”
+        //Mostrar â€œDigam el numero base: â€
         System.out.print("Digam el radi: ");
         //Esperar num
         num = teclado.nextDouble();
         //Calcular  = 2 * 3.1416 * num
         lon = 2 * 3.1416 * num ;
-        //Calcular area = 3,1416 * num² 
+        //Calcular area = 3,1416 * numÂ² 
         area5 = 3.1416 * num * num;
-        //Calcula volum = (4/3) * 3,1416 * num³
+        //Calcula volum = (4/3) * 3,1416 * numÂ³
         volum = (4/3) * 3.1416 * (num * num * num);
-        //Mostrar “La longitud es de ” + long
+        //Mostrar â€œLa longitud es de â€ + long
         System.out.println("La longitud es de " + lon);
-        //Mostrar “L’area es de ” + area
+        //Mostrar â€œLâ€™area es de â€ + area
         System.out.println("L'area es de " + area5);
-        //Mostrar “El volum es de ” + volum
+        //Mostrar â€œEl volum es de â€ + volum
         System.out.println("El volum es de " + volum);
         //Programa que donat el preu total, i el 
         //descompte (%), et digui el cost del producte. 
         System.out.println("EJERCICIO 6");
-        //Mostrar “Digam el preu total: ”
+        //Mostrar â€œDigam el preu total: â€
         System.out.print("Digam el preu total: ");
         //Esperar preu
         preu = teclado.nextInt();
-        //Mostrar “Descompte: ”
+        //Mostrar â€œDescompte: â€
         System.out.print("Descompte del: ");
         //Esperar desc
         desc = teclado.nextInt();
         //Calcular total = (100 / desc) * preu
         total = (100 / desc) * preu;
-        //Mostrar “El preu amb descompte es de: ” + total
+        //Mostrar â€œEl preu amb descompte es de: â€ + total
         System.out.println("El preu amb descompte es de: " + total);
         //Programa que, at?s el preu nominal d'un article i el preu de 
         //venda real, ens mostri el percentatge de descompte realitzat.
         System.out.println("EJERCICIO 7");
-        //Mostrar “Digam el preu nominal: ”
+        //Mostrar â€œDigam el preu nominal: â€
         System.out.print("Digam el preu nominal: ");
         //Esperar nominal
         nominal = teclado.nextDouble();
-        //Mostrar “Digam el preu de venda real: ”
+        //Mostrar â€œDigam el preu de venda real: â€
         System.out.print("Digam el preu de venda real: ");
         //Esperar venda
         venda = teclado.nextDouble();
         //Calcular percentatge = (venda * nominal) / 100
         perc = (venda * nominal) / 100;
-        //Mostrar “El percentatge de descompte realitzat es de ” + percentatge
+        //Mostrar â€œEl percentatge de descompte realitzat es de â€ + percentatge
         System.out.println("El percentatge de descompte realitzat es de " + perc);
         //Programa que llegeixi un valor corresponent a una 
         //temperatura en graus Fahrenheit i escriviu 
         //la temperatura en graus Celsius. 
         System.out.println("EJERCICIO 8");
-        //Mostra “Temperatura en graus Fahrenheit: ”
+        //Mostra â€œTemperatura en graus Fahrenheit: â€
         System.out.print("Temperatura en graus Fahrenheit: ");
         //Esperar fah
         fah = teclado.nextDouble();
         //Calcular cels = (fah - 32) / 1.8
         cel = (fah - 32) / 1.8;
-        //Mostrar “Son ” + cels + “grados Celsius”
+        //Mostrar â€œSon â€ + cels + â€œgrados Celsiusâ€
         System.out.println("Son " + cel + "grados Celsius");
         //Programa que transforma las milles n?utiques a metres.
         System.out.println("EJERCICIO 9");
-        //Mostra “Milles nutiques: ”
+        //Mostra â€œMilles nautiques: â€
         System.out.print("Milles nautiques : ");
         //Esperar nau
         nau = teclado.nextDouble();
         //Calcular metres = nau * 1852
         metres = nau * 1852;
-        //Mostrar “Tens ” + metres + “metres”
+        //Mostrar â€œTens â€ + metres + â€œmetresâ€
         System.out.println("Tens " + metres  + " metres.");
 
     }
