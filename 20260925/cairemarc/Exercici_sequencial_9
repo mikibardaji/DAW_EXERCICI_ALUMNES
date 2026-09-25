@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici_sequencials_9;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mca7677
+ */
+public class Exercici_sequencials_9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        double millas_nauticas;
+        
+        //mostrar cuantas millas nauticas
+        System.out.println("Cuantas millas nauticas");
+        
+        //esperar millas nauticas 
+        millas_nauticas = sc.nextDouble();
+        
+        //calcular metros 
+        
+        double metros = (millas_nauticas * 1852);
+        
+        System.out.println("son" + metros);
+        
+    }
+    
+}
