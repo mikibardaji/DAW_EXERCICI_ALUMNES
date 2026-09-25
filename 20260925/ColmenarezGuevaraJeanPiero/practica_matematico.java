@@ -11,6 +11,7 @@ class Main {
         double descont;
         double precio_nominal, precio_venda, descont2;
         double fahr, celsius;
+        double millas, millas_nau, metros;
 
         // Ejercicio 1
         System.out.println("Cual es tu nombre de usuario? ");
@@ -81,7 +82,16 @@ class Main {
         celsius = (fahr - 32.0) * (5.0 / 9.0);
         System.out.println("Formula: (" + fahr + " - 32) * (5 / 9)");
         System.out.println("La temperatura en Celsius es: " + celsius);
-
+     //INICIO
+     //DEFINIR CONSTA MILLASNa A METROS= 1852
+    //MOSTRAR MILLAS NAUTICAS
+          System.out.println("Escribe las Millas Nautica");
+             //ESPERAR MILLAS
+          millas = teclado.nextDouble();
+    //CALCULAR METROS = MILLAS POR MILLAS A METROS
+    millas_nau = millas * 1852;
+    //MOSTRAR EN MILLAS EN METRO
+            System.out.println("De millas a Metros son " + millas_nau);
 
         //No tengo ordenador, esto es de programiz.com, es horrible
         
