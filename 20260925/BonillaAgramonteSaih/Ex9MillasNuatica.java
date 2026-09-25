@@ -17,17 +17,17 @@ public class Ex9MillasNautica {
      */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        final double MillasAMetros = 1852;
-        double millas, metros;       
+        final int MillasAMetros = 1852;
+        double millasNauticas, metros;       
         
         //mostrar cuantas millas 
         System.out.println("¿Cuantas millas nauticas?");
         
         // esperar millas 
-        millas = teclado.nextDouble();
+        millasNauticas = teclado.nextDouble();
         
         //calcular metros = millas 
-       metros = millas * MillasAMetros;
+       metros = millasNauticas * MillasAMetros;
        
         System.out.println("Mostrar metros " + metros);
         
