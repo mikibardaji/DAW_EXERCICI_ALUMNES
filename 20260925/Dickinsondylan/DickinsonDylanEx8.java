@@ -6,7 +6,7 @@ package exercici8;
 import java.util.Scanner;
 /**
  *
- * @author myths
+ * @author myths   
  */
 public class Exercici8 {
 
