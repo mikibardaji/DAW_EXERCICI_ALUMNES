@@ -1,0 +1,23 @@
+Inicio
+Mostrar “Cuántos créditos tienes?”
+Esperar creditos_actuales
+Mostrar “Cuántos créditos cuesta una hora?”
+Esperar precio_hora
+Mostrar “Cuántas horas quieres contratar?”
+Esperar num_horas
+Calcular coste_total = precio_hora * num_horas
+Calcular creditos_suficientes = creditos_actuales >= coste_total
+Mostrar creditos_suficientes
+Fin
+
+
+
+
+
+
+Inicio
+Mostrar “Cuántos euros quieres convertir?”
+Esperar euros
+Calcular creditos = euros * 8
+Mostrar creditos
+Fin
