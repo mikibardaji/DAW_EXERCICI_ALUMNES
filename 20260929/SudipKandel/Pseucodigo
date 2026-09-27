@@ -1,3 +1,5 @@
+Exercici 3: Comprovació de Crèdits Suficients
+
 Inicio
 Mostrar “Cuántos créditos tienes?”
 Esperar creditos_actuales
@@ -12,8 +14,7 @@ Fin
 
 
 
-
-
+Exercici 5: Conversió de Moneda (Euros a Crèdits)
 
 Inicio
 Mostrar “Cuántos euros quieres convertir?”
