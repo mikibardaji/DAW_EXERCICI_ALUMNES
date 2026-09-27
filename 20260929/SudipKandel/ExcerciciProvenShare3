@@ -1,0 +1,52 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package excerciciprovenshare3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author kande
+ */
+public class ExcerciciProvenShare3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+ 
+    Scanner teclado = new Scanner(System.in);
+    
+    double creditos_actuales, precio_hora, num_horas, coste_total;
+    boolean creditos_suficientes;
+
+    // Mostrar "Cuántos créditos tienes?"
+    System.out.println("Cuantos creditos tienes? ");
+
+    // Esperar creditos_actuales
+    creditos_actuales = teclado.nextDouble();
+
+    // Mostrar "Cuántos créditos cuesta una hora?"
+    System.out.println("Cuantos creditos cuesta una hora? ");
+
+    // Esperar precio_hora
+    precio_hora = teclado.nextDouble();
+
+    // Mostrar "Cuántas horas quieres contratar?"
+    System.out.println("Cuantas horas quieres contratar? ");
+
+    // Esperar num_horas
+    num_horas = teclado.nextDouble();
+
+    // Calcular coste_total = precio_hora * num_horas
+    coste_total = precio_hora * num_horas;
+
+    // Calcular creditos_suficientes = creditos_actuales >= coste_total
+    creditos_suficientes = creditos_actuales >= coste_total;
+
+    // Mostrar creditos_suficientes
+    System.out.println(creditos_suficientes);
+}
+    }
