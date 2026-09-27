@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package excerciciprovenshare5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author kande
+ */
+public class ExcerciciProvenShare5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+ 
+    Scanner teclado = new Scanner(System.in);
+    double euros, creditos;
+
+    // Mostrar "Cuantos euros quieres convertir?"
+    System.out.println("Cuantos euros quieres convertir? ");
+
+    // Esperar euros
+    euros = teclado.nextDouble();
+
+    // Calcular creditos = euros * 8
+    creditos = euros * 8;
+
+    // Mostrar los creditos
+    System.out.println("Tienes " + creditos + " creditos");
+
+    }
+    
+}
