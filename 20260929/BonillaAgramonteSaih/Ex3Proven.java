@@ -41,7 +41,7 @@ public class Ex3ComprovacióDeCrèditsSuficients {
         
         //Mostrar resultado final
         tienesSaldo = creditosActuales >= costeTotal;
-        System.out.println(tienesSaldo);
+        System.out.println("Tienes saldo: " + tienesSaldo);
         
     }
     
