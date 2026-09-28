@@ -22,5 +22,6 @@ public class Ejercicio5 {
         euro = teclado.nextDouble();
         System.out.println("Dinero que tengo es:" + euro);
         creditos = euro * ProvenShare;
-        System.out.println("Creditos:" + creditos);    }
+        System.out.println("Creditos:" + creditos);   
+    }
 }
