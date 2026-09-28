@@ -41,13 +41,7 @@ public class Ex3ComprovacióDeCrèditsSuficients {
         
         //Mostrar resultado final
         tienesSaldo = creditosActuales >= costeTotal;
-        
-       //Use if para mostrar tienes saldo y else para mostrar que no tienes (se tienen que crear llaver)
-        if (tienesSaldo) {
-        System.out.println("Tienes saldo");
-        } else { 
-        System.out.println("No tienes saldo");
-        }
+        System.out.println(tienesSaldo);
         
     }
     
