@@ -18,7 +18,7 @@ public class Ex5ProvenShare {
     public static void main(String[] args) {
         double euros, credits;
         
-        final int canviMoneda = 8;
+        final int CANVIMONEDA = 8;
         
         Scanner sc = new Scanner(System.in);  
         
