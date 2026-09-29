@@ -35,7 +35,7 @@ public class Ex3ProvenShare {
         horesServei = teclado.nextDouble();
         // Calcular costServei = preuServei * horesServei
         costServei = preuServei * horesServei;
-        // Comprovar comprovacio = creditsActuals > costServei
+        // Comprovar comprovacio = creditsActuals >= costServei
         comprovacio = creditsAnuals > costServei;
         // Mostrar "Pots comprar-ho?: " + comprovacio
         System.out.println("Pots comprar-ho?: " + comprovacio);
