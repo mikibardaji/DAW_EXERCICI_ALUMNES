@@ -42,4 +42,8 @@ Mostra per pantalla la quantitat de crèdits assignats.
 INICIO
 //Mostrar "Cuantos servicios ofreceras?"
 //Esperar Cantidad de servicios
-//Si ofrece
+//SI servicios = 0 ENTONCES creditos = 10
+//SINO SI servicios = 1 O servicios = 2 ENTONCES creditos = 50
+//SINO creditos = 100
+//MOSTRAR "Créditos asignados: ", creditos
+FIN
