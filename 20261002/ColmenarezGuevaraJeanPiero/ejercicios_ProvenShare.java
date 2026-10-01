@@ -1,5 +1,3 @@
-// Online Java Compiler (Editor)
-// Write and run Java online using this editor.
 import java.util.Scanner;
 
 class Main {
@@ -8,6 +6,7 @@ class Main {
         Scanner teclado = new Scanner (System.in);
         String producto_estado;
         String usuario, rol;
+        int servicios, servicios_credits;
 
 
         //Ejercicio 1
@@ -18,7 +17,7 @@ class Main {
     } else {
             System.out.println("Producte acceptat per al cataleg");
         }
-//Ejercicio 2
+//Ejercicio 3
     System.out.println("Introduce tu nombre de usuario: ");
         usuario = teclado.nextLine();
     System.out.println("Introduce tu rol (estudiant / administrador): ");
@@ -31,7 +30,20 @@ class Main {
         System.out.println ("Acces denegat. Nomes els administradors tenen aquest permis ");
     }
 
-
+    //EJercicio 4
+        System.out.println("Cuanto servicios ofreces para premiarte con creditos? ");
+        servicios = teclado.nextInt();
+        if(servicios == 0){
+            servicios_credits = 10;
+        }
+        else if (servicios == 1 || servicios == 2) {
+            servicios_credits = 50;
+        }
+        else {
+            servicios_credits = 100;
+        }
+            
+System.out.println("Creditos adquiridos a " + usuario + " : " + servicios_credits + " proven-credits.");
         
     }
         
