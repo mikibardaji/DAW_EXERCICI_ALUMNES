@@ -1,0 +1,34 @@
+Exercici 1:
+Inicio
+Mostrar: “Cual es el estado del producto?”
+Esperar: estadoProducto
+Si estadoProducto = Nuevo o = Como nuevo
+Mostrar: “Producto excelente. Se publicará rapidamente.”
+Si no
+Mostrar: “Producto aceptado para el catalogo.”
+Fin
+
+Exercici 3:
+Inicio
+Mostrar: “Cual es tu nombre?”
+Esperar: nombre
+Mostrar: “Cual es tu rol?”
+Esperar: rol
+Si rol = administrador
+Mostrar: “Acceso permitido. Puedes gestionar los usuarios.”
+Si no
+Mostrar: “Acceso denegado. Solo los administradores tienen este permiso.”
+Fin
+
+Exercici 4:
+Inicio
+Mostrar: “Cuantos servicios ofrecerás?”
+Esperar: servicios
+Si servicios = 0
+Calcular: creditos = 10
+Si no, si servicios es <= 2
+Calcular: creditos = 50
+Si creditos es >=3
+Calcular: creditos = 100
+Mostrar: “Se te han asignado “ + creditos + “ creditos.”
+Fin
