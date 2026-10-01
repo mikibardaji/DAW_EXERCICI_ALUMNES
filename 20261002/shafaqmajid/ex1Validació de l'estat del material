@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex1validació.de.l.estat.del.material;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Usuario
+ */
+public class Ex1ValidacióDeLEstatDelMaterial {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+
+String estado;   
+
+// Mostrar estado del producto
+System.out.println("Quin es l'estat del producte?");
+
+// Esperar estado del producto
+estado = teclado.nextLine();
+
+// Condición
+if (estado.equalsIgnoreCase("Nou") || estado.equalsIgnoreCase("Com nou"))
+{
+    System.out.println("Producte excellent. Es publicara rapidament.");
+}
+else
+{
+    System.out.println("Producte acceptat per al catàleg.");
+}
+    }
+    
+}
