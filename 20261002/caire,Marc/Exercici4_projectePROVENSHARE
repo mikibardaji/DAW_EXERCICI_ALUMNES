@@ -1,0 +1,49 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici4_projecteprovenshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici4_projectePROVENSHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        
+        //Mostramos ahora el nombre de servicios que nos va a ofrecer
+        System.out.println("Nombre de servicios que ofreceras:  ");
+        int Servicios = sc.nextInt();
+        
+        int Creditos;
+        
+        
+        //mostramos que si el numero de servicio es 0 se guardaran 10 creditos
+        if (Servicios ==0){
+            Creditos = 10;
+        }
+        
+        // mostraremos que en los servicios 1 o 2 se guarde un total de 50 creditos
+        else if (Servicios == 1 || Servicios == 2)
+        {
+        Creditos = 50;
+        }
+        
+        //mostraremos todo lo contrario, si es mas de 3 se guardaran 100 creditos
+        else {
+        Creditos = 100;
+        }
+        
+        //mostraremos el total de creditos asignados
+        System.out.println("Tienes un total de creditos asigandos de: " + Creditos);
+    }
+    
+}
