@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercicio4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class ejercicio4 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+       
+        int servicios,creditos;
+         
+       
+        System.out.println("Cuantos servicios ofreceras?");
+        servicios = teclado.nextInt();
+       
+        if (servicios == 0)
+        {
+            creditos = 10;
+        }
+        else if (servicios == 1 || servicios == 2)
+        {
+           creditos = 50;
+        }
+           else
+        {
+        creditos = 100;  
+       
+        }
+     System.out.println("Creditos asignados:" + creditos);
+    {
+       
+       
+       
+    }
+}
+}
