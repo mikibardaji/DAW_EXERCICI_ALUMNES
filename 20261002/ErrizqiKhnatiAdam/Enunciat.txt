@@ -1,0 +1,1 @@
+Pregunta a l'usuari si vol vendre un producte físic o un servei.
