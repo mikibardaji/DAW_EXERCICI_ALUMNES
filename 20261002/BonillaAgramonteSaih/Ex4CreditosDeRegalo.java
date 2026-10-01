@@ -22,7 +22,7 @@ public class Ex4CreditosDeRegalo {
         //Mostrar Cuanto servicios ofreceras?
         System.out.println("Cuantos servicios ofreceras?");
         
-        //Esperar cantidad de cantidad de servicios
+        //Esperar cantidad de servicios
         servicios = sc.nextInt();
         
         if (servicios == 0)
