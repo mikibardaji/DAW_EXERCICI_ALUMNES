@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici3_projecteprovenshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici3_projectePROVENSHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        
+        //mostramos el nombre del usuario
+        System.out.println("Noembre del Usuario: ");
+        String Nombre = sc.nextLine();
+        
+        
+        //mostramos que rol tienes este caso ADMINISTRADOR O ESTUDIANTE.
+        System.out.println("Rol (Administrador,Estudiante: )");
+        String rol = sc.nextLine();
+        
+        
+        // mostramos si eres el administrador nada mas el siguiente mensaje
+        if (rol.equalsIgnoreCase("Administrador"))
+        {
+            System.out.println("Acceso permitido. puedes gestionar los usuarios");
+        }
+        
+        // mostramos lo contrario que en este caso seria para el Estudiante
+        else {
+                System.out.println("Acceso denegado. nada mas los administradores tienen este ");
+                }
+                
+                
+                
+        
+    }
+    
+}
