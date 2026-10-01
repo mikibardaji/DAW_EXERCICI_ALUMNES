@@ -1,0 +1,50 @@
+Exercici 1: Validació de l'estat del material
+Quan un estudiant penja un producte físic, hem de comprovar el seu estat de conservació. Crea un programa en Java que demani per teclat l'estat d'un producte ("Nou", "Com nou", "Bo" o "Acceptable").
+Si l'estat és "Nou" o "Com nou", mostra el missatge: "Producte excel·lent. Es publicarà ràpidament."
+Si no, mostra: "Producte acceptat per al catàleg."
+(Nota: Recorda ignorar les majúscules i minúscules en comparar el text).
+
+Inicio
+Mostrar "Com aquesta l’estat del producte, Nou, Com nou, Bo o Acceptable”);
+Esperar producto
+
+Si estat es igual a Nou o estat es igual a Com nou 
+    Mostrar "Producte excel·lent. Es publicarà ràpidament."
+Si no
+    Mostrar "Producte acceptat per al catàleg."
+Fin
+
+Exercici 3: El filtre de l'Administrador
+Per protegir la comunitat, només els usuaris amb el rol d'administrador poden esborrar usuaris del sistema. Crea un programa que demani el nom d'usuari i el seu rol (estudiant / administrador).
+Si el rol és "administrador", mostra: "Accés permès. Pots gestionar els usuaris."
+Si el rol és qualsevol altre, mostra: "Accés denegat. Només els administradors tenen aquest permís."
+
+Inicio
+Mostrar "Cuál es tu nombre de usuario?"
+Esperar usuario
+Mostrar "Cuál es tu rol? (estudiante / administrador)"
+Esperar rol
+Si rol es igual a "administrador" 
+    Mostrar "Accés permès. Pots gestionar els usuaris."
+Si no
+    Mostrar "Accés denegat. Només els administradors tenen aquest permís."
+Fin 
+
+Exercici 4: Càlcul de crèdits inicials de regal
+Quan un usuari es registra a ProvenShare, rep crèdits de benvinguda en funció dels serveis que ofereix per a la comunitat. Demana el nombre de serveis que oferirà l'estudiant en registrar-se (un nombre sencer).
+Si ofereix 0 serveis, rep 10 crèdits.
+Si ofereix 1 o 2 serveis, rep 50 crèdits.
+Si ofereix 3 o més serveis, rep 100 crèdits.
+Mostra per pantalla la quantitat de crèdits assignats.
+
+Inicio
+Mostrar "Cuantos servicios ofreceras?"
+Esperar servicios
+Si servicios = 0 Entonces
+    Calcular creditos = 10
+Si no, si servicios = 1 o servicios = 2 Entonces
+    Calcular creditos = 50
+Si no
+    Calcular creditos = 100
+Mostrar "Creditos asignados: " creditos
+Fin
