@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercicio1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class ejercicio1 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+       
+        String producte;
+       
+        System.out.println("Com aquesta l'estat del producte, Nou, Com Nou, Bo o Acceptable?");
+        producte = teclado.nextLine();
+       
+       
+        if (producte.equalsIgnoreCase("Nou") || producte.equalsIgnoreCase("Com nou")) 
+{
+   
+    System.out.println("Producte excel·lent. Es publicarà ràpidament.");
+}
+        else
+{
+   
+    System.out.println("Producte acceptat per al catàleg.");
+}
+   
+    }
+}
