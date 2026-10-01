@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package classe.ejercicio3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gurleen
+ */
+public class ejercicio3 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner ( System.in);
+       
+        String usario,rol;
+       
+        System.out.println("Cuál es tu nombre de usuario?");
+        usario = teclado.nextLine();
+       
+        System.out.println("Cuál es tu rol?");
+        rol = teclado.nextLine();
+       
+        System.out.println("Hola" + usario + rol);
+       
+        if (rol.equalsIgnoreCase("Administrador"))
+        {
+       
+            System.out.println("Acceso permitido. Puedes gestionar a los usuarios.");
+    }
+    else
+    {
+        System.out.println("Acceso denegado. Sólo los administradores tienen ese permiso.");
+       
+    }
+}
+}
