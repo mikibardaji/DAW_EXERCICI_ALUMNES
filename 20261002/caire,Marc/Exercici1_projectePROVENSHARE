@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercici1_projecteprovenshar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Caire
+ */
+public class Exercici1_projectePROVENSHAR {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        // mostrar en que estado esta el producto
+         System.out.print("Estado del Producto (Nuevo, Como Nuevo, Bueno, Aceptable : ");
+         
+         //esperar estado producto estado producto
+        String Estado = sc.nextLine();
+
+        // if: solamente se ejecutara si nos ponen lo que pedimos. Mostrar que Los estados Nuevo y Como nuevo se publiquen rapidamente por, por lo tanto utilizamos el equalsignorecase, Si nos responde con NUEVO O COMO NUEVO como las 2 son las que queremos pues ya apareceria el mensaje
+        if (Estado.equalsIgnoreCase("Nuevo") || Estado.equalsIgnoreCase("Como Nuevo")) {
+            
+            //Mostramos mensaje 
+            System.out.println("Producto excellente. se publicara rapidamente");
+            
+            // y ahora hacemos lo contrario de lo anterior, los que no queremos. por lo tanto usamos el else
+        } else {
+            
+            //mostramos el mensaje 
+            System.out.println("Producte acceptat per al catàleg.");
+        }
+    }
+}
+    
+    
+
