@@ -3,8 +3,7 @@
 import java.util.Scanner;
 
 class Main {
-    public static void main(String[] args) {
-//Ejercicio 1   
+    public static void main(String[] args) {  
         //Definir
         Scanner teclado = new Scanner (System.in);
         String producto_estado;
@@ -19,7 +18,7 @@ class Main {
     } else {
             System.out.println("Producte acceptat per al cataleg");
         }
-
+//Ejercicio 2
     System.out.println("Introduce tu nombre de usuario: ");
         usuario = teclado.nextLine();
     System.out.println("Introduce tu rol (estudiant / administrador): ");
