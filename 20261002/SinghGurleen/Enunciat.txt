@@ -1,0 +1,3 @@
+Accés de l’usuari:
+Quan una persona vulgui entrar a ProvenShare, primer haurà de posar el seu nom i indicar si està registrada al centre d’estudis. 
+Si està registrada, podrà entrar a la plataforma. Si no està registrada, no podrà accedir a ProvenShare.
