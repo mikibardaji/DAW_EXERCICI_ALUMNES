@@ -1,0 +1,37 @@
+Exercici 1
+INICIO
+ MOSTRAR "Estado del producto (Nuevo, Como Nuevo, Bueno, Aceptable):"
+ ESPERAR Estado
+ SI Estado = "Nuevo" O Estado = "Como Nuevo" ENTONCES
+ MOSTRAR "Producto excelente. Se publicará rápidamente"
+ SINO
+ MOSTRAR "Producto aceptado para el catálogo."
+ FIN 
+
+Exercici 3
+
+INICIO
+MOSTRAR "Nombre del usuario:"
+ESPERAR Nombre
+MOSTRAR "Rol (Administrador, Estudiante):"
+ESPERAR Rol
+SI Rol = "Administrador" ENTONCES
+MOSTRAR "Acceso permitido. Puedes gestionar los usuarios"
+SINO
+MOSTRAR "Acceso denegado. Solo los administradores tienen acceso"
+FIN 
+
+EXERCICI 4
+
+INICIO
+MOSTRAR "Nombre de servicios que ofrecerás:"
+ESPERAR Servicios
+CALCULAR Creditos:
+SI Servicios = 0 ENTONCES
+Creditos = 10
+SINO SI Servicios = 1 O Servicios = 2 ENTONCES
+Creditos = 50
+SINO
+Creditos = 100
+FIN 
+MOSTRAR "Tienes un total de créditos asignados de: " + Creditos
