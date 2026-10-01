@@ -6,7 +6,7 @@ package excomprovcreditsproven;
 
 import java.util.Scanner;
 
-/**
+/**  
  *
  * @author myths
  */
