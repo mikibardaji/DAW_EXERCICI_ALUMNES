@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author gba0006
  */
-public class exercisi4 {
+public class exercisi4 { 
     public static void main(String[] args){
 
     int serveis;
