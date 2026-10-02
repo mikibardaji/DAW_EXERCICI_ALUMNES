@@ -29,7 +29,7 @@ public class Ex9ProvenShare {
         franjaExp1 = "Mati";
         franjaExp2 = "Tarda";
         
-        modalitatMatiExp = "Online";
+        modalitatMatiExp = "Online"; 
         modalitatTardaExp = "Presencial";
         
         if (franjaUsuari.equalsIgnoreCase(franjaExp1) && modalitatUsuari.equalsIgnoreCase(modalitatMatiExp)) {
