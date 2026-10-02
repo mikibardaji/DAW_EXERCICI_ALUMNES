@@ -5,7 +5,7 @@
 package exercisis102;
 
 import java.util.Scanner;
-
+  
 /**
  *
  * @author gba0006
@@ -18,7 +18,7 @@ public class Exercisi1 {
         estat=scan.nextLine();
         
         if (estat.equalsIgnoreCase("Nou")|| estat.equalsIgnoreCase("Com nou")) {
-            System.out.println("Producte excel·lent.");            
+            System.out.println("Producte excelÂ·lent.");            
         }else{
             System.out.println("Producte acceptat");
                
