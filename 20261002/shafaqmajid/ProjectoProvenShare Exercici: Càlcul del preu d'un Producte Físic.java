@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package modalitatdeservei;
+package Càlcul del preu d'un Producte Físic;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author Usuario
  */
-public class ProjectoProvenShareModalitatdeservei {
+public class ProjectoProvenShareCàlcul del preu d'un Producte Físic {
 
     /**
      * Exercici: Càlcul del preu d'un Producte Físic
