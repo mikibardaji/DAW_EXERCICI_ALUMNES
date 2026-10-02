@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  *
  * @author gba0006
- */
+ */ 
 public class Exercisis102 {
 
     /**
