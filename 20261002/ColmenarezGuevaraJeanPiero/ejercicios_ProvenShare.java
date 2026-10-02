@@ -39,6 +39,10 @@ class Main {
         else if (servicios == 1 || servicios == 2) {
             servicios_credits = 50;
         }
+            //Segunda opcion
+       // else if (servicios => 1 || servicios <= 2) {
+     //       servicios_credits = 50;
+        //}
         else {
             servicios_credits = 100;
         }
